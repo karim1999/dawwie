@@ -1,0 +1,9 @@
+uuid: da1bd084-8738-4435-b99d-9dec43d5b864
+langcode: en
+status: true
+dependencies: {  }
+id: videos_slider_items
+label: 'Videos Slider Item'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

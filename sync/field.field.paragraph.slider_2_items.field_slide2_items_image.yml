@@ -1,0 +1,28 @@
+uuid: e80bcf52-cab6-4296-9e95-35bd5142b7d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slide2_items_image
+    - media.type.image
+    - paragraphs.paragraphs_type.slider_2_items
+id: paragraph.slider_2_items.field_slide2_items_image
+field_name: field_slide2_items_image
+entity_type: paragraph
+bundle: slider_2_items
+label: 'Background Image'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

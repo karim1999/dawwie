@@ -1,0 +1,43 @@
+uuid: 23696084-c6b0-4074-8f74-7ee2af9cb5d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.videos_slider
+    - field.storage.block_content.field_video_slider_items
+    - paragraphs.paragraphs_type.videos_slider_items
+  module:
+    - entity_reference_revisions
+id: block_content.videos_slider.field_video_slider_items
+field_name: field_video_slider_items
+entity_type: block_content
+bundle: videos_slider
+label: 'Video slider Items'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      videos_slider_items: videos_slider_items
+    target_bundles_drag_drop:
+      faq_question_answer_:
+        weight: 6
+        enabled: false
+      home_page_services:
+        weight: 7
+        enabled: false
+      home_page_slider:
+        weight: 8
+        enabled: false
+      slider_2_items:
+        weight: 9
+        enabled: false
+      videos_slider_items:
+        enabled: true
+        weight: 10
+field_type: entity_reference_revisions

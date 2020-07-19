@@ -1,0 +1,28 @@
+uuid: 5333ef1f-8215-4100-bb10-f963f5e33b83
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_top_image
+    - media.type.image
+    - node.type.faq
+id: node.faq.field_top_image
+field_name: field_top_image
+entity_type: node
+bundle: faq
+label: 'Top Image'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

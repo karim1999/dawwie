@@ -1,0 +1,27 @@
+/* 6 of 96 CSS properties converted by rtl.daskhat.ir 
+ These properties should be override originals. 
+ just load rtl css file after original css file.*/ 
+
+/* body {direction:rtl;} */
+
+.owl-carousel .owl-item{
+    float: right;
+}
+
+.owl-carousel .owl-nav button.owl-next,.owl-carousel .owl-nav button.owl-prev,.owl-carousel button.owl-dot{
+    background: right  0;
+}
+
+.owl-carousel.owl-rtl{
+    direction: ltr;
+}
+
+.owl-carousel.owl-rtl .owl-item{
+    float: left;
+}
+
+.owl-carousel .owl-video-play-icon{
+    right: 50%;
+    margin-right: -40px;
+}
+

@@ -1,0 +1,65 @@
+/* 18 of 160 CSS properties converted by rtl.daskhat.ir 
+ These properties should be override originals. 
+ just load rtl css file after original css file.*/ 
+
+/* body {direction:rtl;} */
+
+.lSSlideWrapper .lSFade>*{
+    right: 0;
+    margin-left: 0;
+}
+
+.lSSlideOuter .lSPager.lSGallery{
+    padding-right: 0;
+}
+
+.lSAction>.lSPrev{
+    background-position: right  0;
+    right: 10px;
+}
+
+.lSAction>.lSNext{
+    background-position: right -32px right ;
+    left: 10px;
+}
+
+.lSSlideOuter.vertical.noPager{
+    padding-left: 0!important;
+}
+
+.lSSlideOuter.vertical .lSGallery{
+    left: 0;
+}
+
+.lSSlideOuter.vertical .lSAction>a{
+    right: 50%;
+    margin-right: -14px;
+}
+
+.lSSlideOuter.vertical .lSAction>.lSNext{
+    background-position: right 31px -31px;
+}
+
+.lSSlideOuter.vertical .lSAction>.lSPrev{
+    background-position: right  -31px;
+}
+
+.lSSlideOuter.lSrtl{
+    direction: ltr;
+}
+
+.lSSlideOuter .lSPager,.lSSlideOuter .lightSlider{
+    padding-right: 0;
+}
+
+.lSSlideOuter.lSrtl .lSPager,.lSSlideOuter.lSrtl .lightSlider{
+    padding-left: 0;
+}
+
+.lSSlideOuter .lSGallery li,.lSSlideOuter .lightSlider>*{
+    float: right;
+}
+
+.lSSlideOuter.lSrtl .lSGallery li,.lSSlideOuter.lSrtl .lightSlider>*{
+    float: left!important;
+}

@@ -1,0 +1,32 @@
+uuid: 5981df5b-969e-41c2-8280-680ada47a8e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.course_features_list.field_features_list_description
+    - field.field.paragraph.course_features_list.field_features_list_title
+    - paragraphs.paragraphs_type.course_features_list
+id: paragraph.course_features_list.default
+targetEntityType: paragraph
+bundle: course_features_list
+mode: default
+content:
+  field_features_list_description:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_features_list_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

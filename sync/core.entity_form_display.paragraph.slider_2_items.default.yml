@@ -1,0 +1,43 @@
+uuid: cff3afba-9226-4088-871d-7fc6d9fb728b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slider_2_items.field_slide2_items_image
+    - field.field.paragraph.slider_2_items.field_slide2_items_title
+    - field.field.paragraph.slider_2_items.field_youtube_link
+    - paragraphs.paragraphs_type.slider_2_items
+  module:
+    - link
+    - media_library
+id: paragraph.slider_2_items.default
+targetEntityType: paragraph
+bundle: slider_2_items
+mode: default
+content:
+  field_slide2_items_image:
+    type: media_library_widget
+    weight: 1
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_slide2_items_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_youtube_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,132 @@
+homepage:
+  version: 1.x
+  js:
+    js/homepage/jquery.min.js: {}
+    js/homepage/jquery.min1.js: {}
+    js/homepage/popper.min.js: {}
+    js/homepage/bootstrap.min.js: {}
+    js/homepage/waypoints.min.js: {}
+    js/homepage/jquery.counterup.min.js: {}
+    js/homepage/jquery.preloadinator.min.js: {}
+    js/homepage/lightbox.js: {}
+    js/homepage/lity.min.js: {}
+    js/homepage/owl.carousel.js: {}
+    js/homepage/jquery.smartmenus.min.js: {}
+    js/homepage/custom.js: {}
+    js/homepage/domready.js: {}
+    js/homepage/modernizr.custom.26633.js: {}
+    js/homepage/jquery.gridrotator.js: {}
+    custom/_custom.js: {}
+  css:
+    component:
+      css/homepage/flaticon.css: {}
+      css/homepage/bootstrap.min.css: {}
+      css/homepage/owl.carousel.min.css: {}
+      css/homepage/owl.theme.default.min.css: {}
+      css/homepage/lightbox.css: {}
+      css/homepage/lity.min.css: {}
+      css/homepage/menu.css: {}
+      css/homepage/default.css: {}
+      css/homepage/skin/skin-1.css: {}
+      css/homepage/style.css: {}
+      css/homepage/style2.css: {}
+      css/homepage/responsive.css: {}
+      css/homepage/font-awesome.min.css: {}
+      custom/_custom.css: {}
+homepage-en:
+  css:
+    component:
+      css/homepage-en/flaticon.css: {}
+      css/homepage-en/bootstrap.min.css: {}
+      css/homepage-en/owl.carousel.min.css: {}
+      css/homepage-en/owl.theme.default.min.css: {}
+      css/homepage-en/lightbox.css: {}
+      css/homepage-en/lity.min.css: {}
+      css/homepage-en/menu.css: {}
+      css/homepage-en/default.css: {}
+      css/homepage-en/skin/skin-1.css: {}
+      css/homepage-en/style.css: {}
+      css/homepage-en/style2.css: {}
+      css/homepage-en/responsive.css: {}
+      css/homepage-en/font-awesome.min.css: {}
+      custom/_custom-en.css: {}
+innerpage:
+  version: 1.x
+  js:
+#    js/inner/jquery.min.js: {}
+    js/inner/bootstrap.bundle.min.js: {}
+    js/inner/navik.menu.js: {}
+    js/inner/parallaxie.js: {}
+    js/inner/jquery.appear.js: {}
+    js/inner/jQuerySimpleCounter.js: {}
+    js/inner/jquery.justifiedGallery.min.js: {}
+    js/inner/wow.min.js: {}
+    js/inner/lightslider.min.js: {}
+    js/inner/isotope.pkgd.js: {}
+    js/inner/imagesloaded.pkgd.js: {}
+    js/inner/jquery.lineProgressbar.js: {}
+    js/inner/circle-progress.min.js: {}
+    js/inner/jquery.magnific-popup.min.js: {}
+    js/inner/owl.carousel.min.js: {}
+    js/inner/jquery-modal-video.min.js: {}
+    js/inner/jquery.pointparallax.min.js: {}
+    js/inner/typed.min.js: {}
+    js/inner/TweenMax.min.js: {}
+    js/inner/jquery.touchSwipe.min.js: {}
+    js/inner/modernizr.custom.53451.js: {}
+    js/inner/jquery.gallery.js: {}
+    js/inner/script.js: {}
+    custom/_custom.js: {}
+  dependencies:
+    - core/jquery
+  css:
+    component:
+      css/inner/bootstrap.min.css: {}
+      css/inner/fonts/fontawesome/css/all.css: {}
+      css/inner/font-awesome.min.css: {}
+      css/inner/themify-icons.css: {}
+      css/inner/animate.css: {}
+      css/inner/navik.menu.css: {}
+      css/inner/justifiedGallery.min.css: {}
+      css/inner/jquery.lineProgressbar.css: {}
+      css/inner/magnific-popup.css: {}
+      css/inner/owl.carousel.min.css: {}
+      css/inner/owl.theme.default.min.css: {}
+      css/inner/lightslider.min.css: {}
+      css/inner/modal-video.min.css: {}
+      css/inner/element.css: {}
+      css/inner/style.css: {}
+      css/inner/flaticon.css: {}
+      css/inner/default.css: {}
+      custom/_custom.css: {}
+innerpage-en:
+  css:
+    component:
+      css/inner-en/bootstrap.min.css: {}
+      css/inner-en/fonts/fontawesome/css/all.css: {}
+      css/inner-en/font-awesome.min.css: {}
+      css/inner-en/themify-icons.css: {}
+      css/inner-en/animate.css: {}
+      css/inner-en/navik.menu.css: {}
+      css/inner-en/justifiedGallery.min.css: {}
+      css/inner-en/jquery.lineProgressbar.css: {}
+      css/inner-en/magnific-popup.css: {}
+      css/inner-en/owl.carousel.min.css: {}
+      css/inner-en/owl.theme.default.min.css: {}
+      css/inner-en/lightslider.min.css: {}
+      css/inner-en/modal-video.min.css: {}
+      css/inner-en/element.css: {}
+      css/inner-en/style.css: {}
+      css/inner-en/flaticon.css: {}
+      css/inner-en/default.css: {}
+      custom/_custom-en.css: {}
+coming_soon:
+  version: 1.x
+  js:
+    js/coming_soon/jquery.themepunch.tools.min.js: {}
+    js/coming_soon/jquery.themepunch.revolution.min.js: {}
+    js/coming_soon/revolution.extension.actions.min.js: {}
+    js/coming_soon/revolution.extension.kenburn.min.js: {}
+    js/coming_soon/revolution.extension.layeranimation.min.js: {}
+    js/coming_soon/revolution.extension.slideanims.min.js: {}
+    js/coming_soon/execute.js: {}

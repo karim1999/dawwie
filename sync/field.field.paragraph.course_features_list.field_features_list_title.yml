@@ -1,0 +1,19 @@
+uuid: c1e97eab-61cf-4586-bd7b-755e66a831fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_features_list_title
+    - paragraphs.paragraphs_type.course_features_list
+id: paragraph.course_features_list.field_features_list_title
+field_name: field_features_list_title
+entity_type: paragraph
+bundle: course_features_list
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

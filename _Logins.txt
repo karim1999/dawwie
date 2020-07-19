@@ -1,0 +1,25 @@
+sA_dawwie
+AAjZZu8PG4uc3R8L
+
+CmsAdmin
+9ZC4gLaNKcWcSp59
+
+
+DB
+===
+db_a34845_dawwie
+MYSQL: mysql5015.site4now.net
+Username: a34845_dawwie
+Password: P@ssw0rd001
+---
+https://mysql.site4now.net/
+mysql5015.site4now.net
+a34845_dawwie
+P@ssw0rd001
+
+Host
+====
+username : dawie 
+pwd : dawie@2020
+host : ftp.site4now.net
+http://dawwie.nahrdev.net/

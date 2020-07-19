@@ -1,0 +1,119 @@
+/* 35 of 226 CSS properties converted by rtl.daskhat.ir 
+ These properties should be override originals. 
+ just load rtl css file after original css file.*/ 
+
+/* body {direction:rtl;} */
+
+.mfp-bg{
+    right: 0;
+}
+
+.mfp-wrap{
+    right: 0;
+}
+
+.mfp-container{
+    right: 0;
+}
+
+.mfp-content{
+    text-align: right;
+}
+
+.mfp-preloader{
+    right: 8px;
+    left: 8px;
+}
+
+.mfp-close{
+    left: 0;
+    padding: 0 10px 18px 0 ;
+}
+
+.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close{
+    text-align: left;
+    padding: 10px 0 0 10px ;
+}
+
+.mfp-counter{
+    left: 0;
+}
+
+.mfp-arrow:before,  .mfp-arrow:after{
+    right: 0;
+    margin-right: 35px;
+}
+
+.mfp-arrow-left{
+    right: 0;
+}
+
+.mfp-arrow-left:after{
+    border-left: 17px solid #FFF;
+    margin-right: 31px;
+}
+
+.mfp-arrow-left:before{
+    margin-right: 25px;
+    border-left: 27px solid #3F3F3F;
+}
+
+.mfp-arrow-right{
+    left: 0;
+}
+
+.mfp-arrow-right:after{
+    border-right: 17px solid #FFF;
+    margin-right: 39px;
+}
+
+.mfp-arrow-right:before{
+    border-right: 27px solid #3F3F3F;
+}
+
+.mfp-iframe-scaler iframe{
+    right: 0;
+}
+
+.mfp-figure:after{
+    right: 0;
+    left: 0;
+}
+
+.mfp-bottom-bar{
+    right: 0;
+}
+
+.mfp-title{
+    text-align: right;
+    padding-left: 36px;
+}
+
+@media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px){
+    .mfp-img-mobile .mfp-image-holder{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .mfp-img-mobile .mfp-figure small{
+        margin-right: 5px;
+    }
+
+    .mfp-img-mobile .mfp-counter{
+        left: 5px;
+    }
+
+    .mfp-img-mobile .mfp-close{
+        left: 0;
+    }
+
+}
+
+@media all and (max-width: 900px){
+    .mfp-container{
+        padding-right: 6px;
+        padding-left: 6px;
+    }
+
+}
+

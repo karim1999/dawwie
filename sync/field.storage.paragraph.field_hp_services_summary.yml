@@ -1,0 +1,19 @@
+uuid: 1a5c7883-90d5-409c-acb0-7a2a979edd97
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_hp_services_summary
+field_name: field_hp_services_summary
+entity_type: paragraph
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,8 @@
+uuid: 2168d3b0-37cd-45a4-8eb2-d422ac7e19ea
+langcode: en
+status: true
+dependencies: {  }
+id: videos_slider
+label: 'Videos Slider'
+revision: 0
+description: ''

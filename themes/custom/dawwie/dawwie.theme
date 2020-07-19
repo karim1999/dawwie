@@ -1,0 +1,156 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the Dawwie subtheme.
+ */
+
+/**
+ * Implements HOOK_preprocess();
+ */
+function dawwie_preprocess(&$variables, $hook) {
+
+    //Base path
+    $variables['base_path'] = base_path();
+
+    //Language
+    $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+    $variables['language'] = $language;
+
+    //Front Page URL
+    $variables['frontpage'] = \Drupal\Core\Url::fromRoute('<front>');
+
+    $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+
+    if ($node = \Drupal::routeMatch()->getParameter('node')) {
+        $variables['node_type'] = $node->getType();
+        $variables['node_id'] = $node->id();
+    }
+
+
+    if (\Drupal::currentUser()->isAuthenticated()) {
+        $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
+        $variables['user_id'] = \Drupal::currentUser()->id();
+        $variables['user_name'] = $user->getUsername();
+        ;
+        $variables['user_gender'] = $user->get('field_user_gender')->value;
+        $variables['user_govern'] = $user->get('field_user_governorate')->value;
+    }
+}
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function dawwie_page_attachments_alter(&$attachments) {
+
+    $lang_code = \Drupal::languageManager()->getCurrentLanguage()->getId();
+    
+    if (\Drupal::service('path.matcher')->isFrontPage()) {
+        $attachments['#attached']['library'][] = 'dawwie/homepage';
+        if($lang_code == 'en'){
+            $attachments['#attached']['library'][] = 'dawwie/homepage-en';
+        }
+    } else {
+        $attachments['#attached']['library'][] = 'dawwie/innerpage';
+        if($lang_code == 'en'){
+            $attachments['#attached']['library'][] = 'dawwie/innerpage-en';
+        }
+    }
+}
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function dawwie_preprocess_node(&$variables) {
+
+    if ($variables['node']->getType() == 'course') {
+
+        $allowed_regions = ['highlighted'];
+        dawwie_add_regions_to_node($allowed_regions, $variables);
+
+
+        if (\Drupal::currentUser()->isAnonymous()) {
+            //Register form
+            $entity = \Drupal::entityTypeManager()->getStorage('user')->create(array());
+            $formObject = \Drupal::entityTypeManager()
+                    ->getFormObject('user', 'register')
+                    ->setEntity($entity);
+            $form = \Drupal::formBuilder()->getForm($formObject);
+            $variables['register_form'] = \Drupal::service('renderer')->render($form);
+        }
+    }
+
+
+    if ($variables['node']->getType() == 'home_page') {
+
+
+        $node = $variables['node'];
+
+        //Section 4 images
+        $section4_images = $node->get('field_hp_s4_images');
+
+        if (!$section4_images->isEmpty()) {
+            foreach ($section4_images as $image) {
+                $uri = file_create_url($image->entity->get('field_media_image')->entity->uri->value);
+                $section4_images_arr[] = $uri;
+            }
+            $variables['section4_images'] = $section4_images_arr;
+        }
+
+        //Section 5 stories
+        $section5_stories = $node->get('field_hp_s5_stories');
+        if (!$section5_stories->isEmpty()) {
+            foreach ($section5_stories as $index => $story) {
+
+                $s5_node = Drupal\node\Entity\Node::load($story->getValue()['target_id']);
+
+                $s5_story = new stdClass();
+                $s5_story->title = $s5_node->get('title')->first()->getValue()['value'];
+                $s5_story->description = $s5_node->get('field_story_content')->first()->getValue()['value'];
+                $s5_story->photo = file_create_url($s5_node->field_story_photo->entity->getFileUri());
+                $s5_story->alias = \Drupal::service('path.alias_manager')->getAliasByPath('/node/' . $story->getValue()['target_id']);
+
+                $s5_stories[] = $s5_story;
+            }
+            $variables['section4_stories'] = array_chunk($s5_stories, 2);
+        }
+    }
+    if ($variables['node']->id() == 15) {//coming soon page
+        $variables['#attached']['library'][] = 'dawwie/coming_soon';
+    }
+}
+
+/**
+ * THEME_add_regions_to_node
+ */
+function dawwie_add_regions_to_node($allowed_regions, &$variables) {
+    // Retrieve active theme
+    $theme = \Drupal::theme()->getActiveTheme()->getName();
+
+    // Retrieve theme regions
+    $available_regions = system_region_list($theme, 'REGIONS_ALL');
+
+    // Validate allowed regions with available regions
+    $regions = array_intersect(array_keys($available_regions), $allowed_regions);
+
+    // For each region
+    foreach ($regions as $key => $region) {
+
+        // Load region blocks
+        $blocks = entity_load_multiple_by_properties('block', array('theme' => $theme, 'region' => $region));
+
+        // Sort ‘em
+        uasort($blocks, 'Drupal\block\Entity\Block::sort');
+
+        // Capture viewable blocks and their settings to $build
+        $build = array();
+        foreach ($blocks as $key => $block) {
+            if ($block->access('view')) {
+                $build[$key] = entity_view($block, 'block');
+            }
+        }
+
+        // Add build to region
+        $variables[$region] = $build;
+    }
+}

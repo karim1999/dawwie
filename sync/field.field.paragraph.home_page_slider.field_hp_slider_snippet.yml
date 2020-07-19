@@ -1,0 +1,21 @@
+uuid: 11983da7-eed8-43d0-8245-032f4f7cfd1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hp_slider_snippet
+    - paragraphs.paragraphs_type.home_page_slider
+  module:
+    - text
+id: paragraph.home_page_slider.field_hp_slider_snippet
+field_name: field_hp_slider_snippet
+entity_type: paragraph
+bundle: home_page_slider
+label: Snippet
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,39 @@
+uuid: 61d15e3c-86b1-4f79-9b8d-72d2557d2224
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.story.field_story_content
+    - field.field.node.story.field_story_photo
+    - node.type.story
+  module:
+    - image
+    - user
+id: node.story.default
+targetEntityType: node
+bundle: story
+mode: default
+content:
+  field_story_content:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_story_photo:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

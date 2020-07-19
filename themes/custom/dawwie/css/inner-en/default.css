@@ -1,0 +1,80 @@
+/* 22 of 344 CSS properties converted by rtl.daskhat.ir 
+ These properties should be override originals. 
+ just load rtl css file after original css file.*/ 
+
+/* body {direction:rtl;} */
+
+i.flat::before{
+    margin-right: 0px !important;
+}
+
+form .form-group input[type="text"],  form input[type="email"],  form input[type="password"],  form input[type="number"],  textarea{
+    float: right;
+    text-align: left;
+direction: ltr;
+}
+
+form .form-group button[type="submit"] i{
+    margin-right: 10px;
+}
+
+.preloader{
+    right: 0;
+}
+
+.heading h2::after{
+    right: 0;
+}
+
+.heading-center h2::after{
+    right: 0;
+    left: 0;
+}
+
+.move-right{
+    float: left !important;
+}
+
+.move-left{
+    float: right !important;
+}
+
+nav ul.pagination .page-item .page-link{
+    margin-left: 15px;
+}
+
+nav ul.pagination .page-item .page-link:last-child{
+    margin-left: 0px;
+}
+
+nav ul.pagination .page-item .page-link i::before{
+    margin-right: 0px;
+}
+
+ol.breadcrumb li.active::before{
+    right: -5px;
+}
+
+#scroll{
+    left: 20px;
+}
+
+.btn::before,   .btn::after{
+    right: 0;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: rgba(255, 255, 255, 1);
+}
+
+.rays{
+    right: 50%;
+}
+
+.rays:before,   .rays:after{
+    left: 0;
+    right: 0;
+}
+
+.owl-main .on-dark.btn-primary{
+    margin-left: 15px;
+}

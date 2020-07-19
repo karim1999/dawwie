@@ -1,0 +1,15 @@
+uuid: 7a463ec6-e8d5-41b0-a4f7-92d3954795c3
+name: دوًي
+mail: mogbril@gmail.com
+slogan: ''
+page:
+  403: /node/18
+  404: /node/16
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+langcode: ar
+default_langcode: ar
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+mail_notification: ''

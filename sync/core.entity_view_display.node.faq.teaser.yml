@@ -1,0 +1,29 @@
+uuid: d0dc601c-58aa-463f-ba03-45bb10799667
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.faq.field_questions_answers
+    - field.field.node.faq.field_top_image
+    - field.field.node.faq.field_video_poster
+    - field.field.node.faq.field_youtube_link
+    - node.type.faq
+  module:
+    - user
+id: node.faq.teaser
+targetEntityType: node
+bundle: faq
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_questions_answers: true
+  field_top_image: true
+  field_video_poster: true
+  field_youtube_link: true
+  langcode: true

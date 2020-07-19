@@ -1,0 +1,280 @@
+/* 65 of 330 CSS properties converted by rtl.daskhat.ir 
+ These properties should be override originals. 
+ just load rtl css file after original css file.*/ 
+
+/* body {direction:rtl;} */
+
+@media only screen and (max-width: 1400px){
+    .slider.style-1 .owl-main .caption{
+        left: 11%;
+        right: 45% !important;
+    }
+
+    .slider.style-1 .owl-main .owl-dots{
+        left: 93%;
+    }
+
+    .about-us .content-sec{
+        padding-left: 11%;
+    }
+
+    .about-us::after{
+        right: 93%;
+    }
+
+    .qualities .column .icon{
+        right: 10%;
+    }
+
+}
+
+@media only screen and (max-width: 1280px){
+    .slider.style-1 .owl-main .caption{
+        right: 6%;
+    }
+
+    .services .circle.border.c-1{
+        right: 18%;
+    }
+
+    .portfolio .strong-border{
+        right: 5%;
+    }
+
+}
+
+@media only screen and (max-width: 1200px){
+    .single-post-detail .tags_share .share_on{
+        float: left;
+    }
+
+    .slider.style-1 .owl-main .caption{
+        right: 38% !important;
+    }
+
+}
+
+@media only screen and (max-width: 1080px){
+    .blog_post .blog_card .post-detail{
+        right: 0;
+    }
+
+    .blog_post.style-2 .blog_card .post-detail{
+        right: 0;
+    }
+
+    .navbar-nav .nav-item{
+        margin-right: 25px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px){
+    .slider.style-1 .owl-main .caption{
+        right: 7%;
+    }
+
+}
+
+@media only screen and (max-width: 990px){
+    .about-us::after{
+        right: 77%;
+    }
+
+    .about-us.style-2 .counter-sec{
+        padding-left: 0px;
+    }
+
+    .inner .about-us .content-sec{
+        padding-left: 0;
+    }
+
+    .testimonials .circle.strong-border{
+        left: -281px;
+        right: auto;
+    }
+
+    .single-post-detail .comments ol.comments-list.reply{
+        margin-right: 20px;
+    }
+
+    .inner .about-us .content-sec .left-content{
+        padding-left: 0;
+    }
+
+    .qualities .column:hover .icon{
+        right: 75%;
+    }
+
+    .navbar-nav .nav-item{
+        margin-right: 0;
+    }
+
+}
+
+@media only screen and (max-width: 767px){
+    .blog_post .blog_card .post-detail{
+        right: -50px;
+    }
+
+    .testimonials .circle.strong-border{
+        right: 10%;
+        left: auto;
+    }
+
+    .pricing .price_card{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .inner .blog_post .blog_card .post-detail{
+        right: 0;
+    }
+
+}
+
+@media only screen and (max-width: 640px){
+    .slider.style-1 .owl-main .item::after{
+        border-radius: 500px 500px 0 0;
+    }
+
+    .slider.style-1 .owl-main .caption{
+        right: 0;
+        left: 0;
+    }
+
+    .slider.style-1 .owl-main .owl-dots{
+        right: 0;
+        left: 0;
+    }
+
+    .slider.style-1 .owl-main .owl-dots button{
+        float: right;
+    }
+
+}
+
+@media only screen and (max-width: 568px){
+    .blog_post .blog_card .post-detail{
+        right: 0;
+    }
+
+    .testimonials .circle.strong-border{
+        right: 5%;
+        left: auto;
+    }
+
+    .video .play-sec a{
+        right: 18%;
+    }
+
+}
+
+@media only screen and (max-width: 480px){
+    .contact_info ul li .detail{
+        float: right;
+    }
+
+    .testimonials .circle.strong-border{
+        right: 0;
+        left: 0;
+    }
+
+    .single-post-detail .comments ol li .visitor_description .name_date .date{
+        padding-right: 0px;
+        margin-right: 0px;
+        border-right: none;
+    }
+
+}
+
+@media only screen and (max-width: 1000px){
+    .slider.style-1 .owl-main .caption{
+        left: 6%;
+        right: 40%!important;
+    }
+
+}
+
+@media only screen and (max-width: 900px){
+    .slider.style-1 .owl-main .caption{
+        left: 6%;
+        right: 40%!important;
+    }
+
+}
+
+@media screen and (min-device-width: 850px) and (max-device-width: 900px){
+    .slider.style-1 .owl-main .caption{
+        left: 6%;
+        right: 35%!important;
+    }
+
+}
+
+@media screen and (min-device-width: 380px) and (max-device-width: 767px){
+    .slider.style-1 .owl-main .caption{
+        left: 6%;
+        right: 6% !important;
+    }
+
+    .col-md-6.padding02{
+        padding-left: 10px !important;
+    }
+
+    .col-md-6.padding02 span.close.ss{
+        margin-left: 5% !important;
+    }
+
+    .owl-main .on-dark.btn-primary{
+        margin-left: 4px;
+    }
+
+}
+
+@media screen and (max-device-width: 390px) and (min-device-width: 450px){
+    .ri-grid ul{
+        padding-right: 4%!important;
+    }
+
+}
+
+@media screen and (max-device-width: 380px) and (min-device-width: 320px){
+    .ri-grid ul{
+        padding-right: 13%!important;
+        padding-left: 5%!important;
+    }
+
+    .slider.style-1 .owl-main .caption{
+        left: 6%;
+        right: 6% !important;
+    }
+
+    .ri-grid-size-2{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .owl-main .on-dark.btn-primary{
+        margin-left: 4px;
+    }
+
+}
+
+.row.row-eq-height {
+    background-image: url(/themes/custom/dawwie/img/new-fourm-back-en.jpg) !important;
+}
+form.form.form-style4.needs-validation.s2 {
+    padding-top: 9%;
+    padding-left: 6%;
+    width: 100%;
+}
+.form.form-style4 .form-control {
+    border-color: #E2E2E2;
+    background: transparent;
+}
+ 
+.slider.style-1 .owl-main .caption {
+    right: 11%;
+    left: 4% !important;
+}

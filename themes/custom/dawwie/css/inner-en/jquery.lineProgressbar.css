@@ -1,0 +1,10 @@
+/* 1 of 14 CSS properties converted by rtl.daskhat.ir 
+ These properties should be override originals. 
+ just load rtl css file after original css file.*/ 
+
+/* body {direction:rtl;} */
+
+.percentCount{
+    float: left;
+}
+

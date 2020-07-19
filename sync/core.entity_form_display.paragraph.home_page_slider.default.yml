@@ -1,0 +1,67 @@
+uuid: 6a3c366b-d4d2-40a9-a39a-d4e4acbc1bae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.home_page_slider.field_hp_slider_button_1
+    - field.field.paragraph.home_page_slider.field_hp_slider_image
+    - field.field.paragraph.home_page_slider.field_hp_slider_snippet
+    - field.field.paragraph.home_page_slider.field_hp_slider_title
+    - field.field.paragraph.home_page_slider.field_youtube_link
+    - paragraphs.paragraphs_type.home_page_slider
+  module:
+    - link
+    - maxlength
+    - media_library
+    - text
+id: paragraph.home_page_slider.default
+targetEntityType: paragraph
+bundle: home_page_slider
+mode: default
+content:
+  field_hp_slider_button_1:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_hp_slider_image:
+    type: media_library_widget
+    weight: 1
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_hp_slider_snippet:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_hp_slider_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 50
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+    type: string_textfield
+    region: content
+  field_youtube_link:
+    weight: 0
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true
+  translation: true

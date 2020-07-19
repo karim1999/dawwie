@@ -1,0 +1,26 @@
+progress:
+  '#changed': 1587602183
+  '#changed_by': '1'
+  '#completed_items': 7
+  '#items':
+    install_and_enable_seo_checklist_module:
+      '#completed': 1587602183
+      '#uid': '1'
+    install_and_enable_admin_toolbar_module:
+      '#completed': 1587602183
+      '#uid': '1'
+    install_and_enable_pathauto_module:
+      '#completed': 1587602183
+      '#uid': '1'
+    install_and_enable_metatag_module:
+      '#completed': 1587602183
+      '#uid': '1'
+    install_and_enable_xml_sitemap_module:
+      '#completed': 1587602183
+      '#uid': '1'
+    configure_xml_sitemap_module:
+      '#completed': 1587602183
+      '#uid': '1'
+    install_and_enable_share_buttons_by_addtoany:
+      '#completed': 1587602183
+      '#uid': '1'

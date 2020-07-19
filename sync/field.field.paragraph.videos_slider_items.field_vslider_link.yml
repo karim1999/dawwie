@@ -1,0 +1,23 @@
+uuid: b883a3e8-e478-4b6a-87d0-96fb8299cf62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_vslider_link
+    - paragraphs.paragraphs_type.videos_slider_items
+  module:
+    - link
+id: paragraph.videos_slider_items.field_vslider_link
+field_name: field_vslider_link
+entity_type: paragraph
+bundle: videos_slider_items
+label: 'Video Link'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

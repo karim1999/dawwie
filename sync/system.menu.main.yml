@@ -1,0 +1,10 @@
+uuid: 192debab-83d2-4c25-a5f9-48c9cf4ed807
+langcode: ar
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Q2Ra3jfoIVk0f3SjxJX61byRQFVBAbpzYDQOiY-kno8
+id: main
+label: 'القائمة الرئيسية'
+description: 'روابط قسم الموقع'
+locked: true

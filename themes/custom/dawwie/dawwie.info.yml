@@ -1,0 +1,13 @@
+name: Dawwie
+type: theme
+description: 'A custom theme for Dawwie based on Bootstrap 4.'
+version: 8.x
+core: 8.x
+base theme: bootstrap_barrio
+
+regions:
+  header: Header
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  content: Content
+  footer: 'Footer'

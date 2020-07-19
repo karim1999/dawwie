@@ -1,0 +1,51 @@
+uuid: b4cb536a-ed9d-4fd2-a277-d7e1d2cee2b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.course.body
+    - field.field.node.course.field_course_certificate
+    - field.field.node.course.field_course_duration
+    - field.field.node.course.field_course_features
+    - field.field.node.course.field_course_guide
+    - field.field.node.course.field_course_language
+    - field.field.node.course.field_course_parts
+    - field.field.node.course.field_course_price
+    - field.field.node.course.field_course_register
+    - field.field.node.course.field_top_image
+    - field.field.node.course.field_trainer_guide
+    - node.type.course
+  module:
+    - text
+    - user
+id: node.course.teaser
+targetEntityType: node
+bundle: course
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_course_certificate: true
+  field_course_duration: true
+  field_course_features: true
+  field_course_guide: true
+  field_course_language: true
+  field_course_parts: true
+  field_course_price: true
+  field_course_register: true
+  field_top_image: true
+  field_trainer_guide: true
+  langcode: true

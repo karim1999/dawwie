@@ -1,0 +1,28 @@
+uuid: c2c1c18f-3288-488a-bbf1-667438ac5bf3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_main_content_bg
+    - media.type.image
+    - node.type.page
+id: node.page.field_main_content_bg
+field_name: field_main_content_bg
+entity_type: node
+bundle: page
+label: 'Background Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,24 @@
+/* 6 of 63 CSS properties converted by rtl.daskhat.ir 
+ These properties should be override originals. 
+ just load rtl css file after original css file.*/ 
+
+/* body {direction:rtl;} */
+
+.justified-gallery>a>img,.justified-gallery>div>img,.justified-gallery>figure>img,.justified-gallery>a>a>img,.justified-gallery>div>a>img,.justified-gallery>figure>a>img{
+    right: 50%;
+}
+
+.justified-gallery>a>.caption,.justified-gallery>div>.caption,.justified-gallery>figure>.caption{
+    right: 0;
+    left: 0;
+}
+
+.justified-gallery>.entry-visible{
+    background: right  0;
+}
+
+.justified-gallery>.spinner{
+    margin-right: -24px;
+    right: 50%;
+}
+

@@ -1,0 +1,10 @@
+uuid: 6d18176a-e700-49ef-bb9b-63500c079ce3
+langcode: ar
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: yoNVreoTdTZTY7GuE8fI9Jmxqdz8vlo4ZJKixMNSosw
+name: Tags
+vid: tags
+description: 'Use tags to group articles on similar topics into categories.'
+weight: 0

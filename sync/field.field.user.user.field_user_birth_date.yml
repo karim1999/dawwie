@@ -1,0 +1,24 @@
+uuid: 554bb496-c4fa-448c-bc2f-bd890ef58f6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_user_birth_date
+  module:
+    - datetime
+    - user
+id: user.user.field_user_birth_date
+field_name: field_user_birth_date
+entity_type: user
+bundle: user
+label: 'Birth Date'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: relative
+    default_date: '-9000 days'
+default_value_callback: ''
+settings: {  }
+field_type: datetime

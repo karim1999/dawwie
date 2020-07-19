@@ -1,0 +1,28 @@
+uuid: c19df2cb-a01e-4015-8d2e-0e7992818f25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hp_s5_stories
+    - node.type.home_page
+    - node.type.story
+id: node.home_page.field_hp_s5_stories
+field_name: field_hp_s5_stories
+entity_type: node
+bundle: home_page
+label: Stories
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      story: story
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

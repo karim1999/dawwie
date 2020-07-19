@@ -1,0 +1,68 @@
+uuid: 66e305b7-6a20-41d3-af57-d4896bf5b3bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.home_page_slider.field_hp_slider_button_1
+    - field.field.paragraph.home_page_slider.field_hp_slider_image
+    - field.field.paragraph.home_page_slider.field_hp_slider_snippet
+    - field.field.paragraph.home_page_slider.field_hp_slider_title
+    - field.field.paragraph.home_page_slider.field_youtube_link
+    - paragraphs.paragraphs_type.home_page_slider
+  module:
+    - link
+    - text
+id: paragraph.home_page_slider.default
+targetEntityType: paragraph
+bundle: home_page_slider
+mode: default
+content:
+  field_hp_slider_button_1:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_hp_slider_image:
+    type: entity_reference_entity_view
+    weight: 4
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_hp_slider_snippet:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_hp_slider_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_youtube_link:
+    weight: 6
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

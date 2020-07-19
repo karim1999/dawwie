@@ -1,0 +1,21 @@
+uuid: 1f90c28c-3ebf-4aa8-8354-9bf8fd3989a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_main_content
+    - node.type.page
+  module:
+    - text
+id: node.page.field_main_content
+field_name: field_main_content
+entity_type: node
+bundle: page
+label: 'Main content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

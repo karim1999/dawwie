@@ -1,0 +1,46 @@
+uuid: e4860105-3893-47e2-8df6-70d976eb0536
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_course_features
+    - node.type.course
+    - paragraphs.paragraphs_type.course_features_list
+  module:
+    - entity_reference_revisions
+id: node.course.field_course_features
+field_name: field_course_features
+entity_type: node
+bundle: course
+label: Features
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      course_features_list: course_features_list
+    target_bundles_drag_drop:
+      course_features_list:
+        enabled: true
+        weight: 7
+      faq_question_answer_:
+        weight: 8
+        enabled: false
+      home_page_services:
+        weight: 9
+        enabled: false
+      home_page_slider:
+        weight: 10
+        enabled: false
+      slider_2_items:
+        weight: 11
+        enabled: false
+      videos_slider_items:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

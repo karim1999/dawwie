@@ -1,0 +1,19 @@
+uuid: bdbe2e77-ea58-47be-973b-d1448a899dc3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_hp_s4_snippet
+field_name: field_hp_s4_snippet
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,25 @@
+uuid: c457ad5f-968e-49ee-83e0-befa1dc9f3da
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8244440d-f276-4e67-af46-e3f0aa458679'
+  module:
+    - block_content
+  theme:
+    - dawwie
+id: connectwithus
+theme: dawwie
+region: footer
+weight: -5
+provider: null
+plugin: 'block_content:8244440d-f276-4e67-af46-e3f0aa458679'
+settings:
+  id: 'block_content:8244440d-f276-4e67-af46-e3f0aa458679'
+  label: 'Connect with us'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,11 @@
+uuid: 21f88c83-59dc-4cf0-b2e9-0b9af489ad91
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:ae0673f0-4855-4fbc-88c4-6ddaf09a7803'
+id: home_page_services
+label: 'Home page Services'
+icon_uuid: ae0673f0-4855-4fbc-88c4-6ddaf09a7803
+description: 'Home page Services.'
+behavior_plugins: {  }

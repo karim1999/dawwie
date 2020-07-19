@@ -1,0 +1,22 @@
+/* 4 of 80 CSS properties converted by rtl.daskhat.ir 
+ These properties should be override originals. 
+ just load rtl css file after original css file.*/ 
+
+/* body {direction:rtl;} */
+
+.modal-video{
+    right: 0;
+}
+
+.modal-video-movie-wrap iframe{
+    right: 0;
+}
+
+.modal-video-close-btn{
+    left: -35px;
+}
+
+.modal-video-close-btn:before,.modal-video-close-btn:after{
+    right: 0;
+}
+

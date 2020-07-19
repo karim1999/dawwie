@@ -1,0 +1,25 @@
+uuid: cc7b7381-d001-458b-82b7-08e504a550a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.videos_slider
+    - field.field.block_content.videos_slider.field_video_slider_items
+  module:
+    - entity_reference_revisions
+id: block_content.videos_slider.default
+targetEntityType: block_content
+bundle: videos_slider
+mode: default
+content:
+  field_video_slider_items:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

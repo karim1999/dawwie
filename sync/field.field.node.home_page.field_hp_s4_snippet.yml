@@ -1,0 +1,21 @@
+uuid: e711f2ac-4779-4ebc-a441-961edcf72206
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hp_s4_snippet
+    - node.type.home_page
+  module:
+    - text
+id: node.home_page.field_hp_s4_snippet
+field_name: field_hp_s4_snippet
+entity_type: node
+bundle: home_page
+label: 'Section 4 Snippet'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

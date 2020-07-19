@@ -1,0 +1,22 @@
+uuid: f776294a-0a95-48f1-a881-0b7a3d930343
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.videos_slider
+id: block_content.videos_slider.status
+field_name: status
+entity_type: block_content
+bundle: videos_slider
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,15 @@
+uuid: dae44641-72f1-432b-83a4-7dacfdefced8
+langcode: ar
+status: true
+dependencies:
+  enforced:
+    module:
+      - media_library
+  module:
+    - media
+_core:
+  default_config_hash: pkq0uj-IoqEQRBOP_ddUDV0ZJ-dKQ_fLcppsEDF2UO8
+id: media.media_library
+label: 'مكتبة الوسائط'
+targetEntityType: media
+cache: true

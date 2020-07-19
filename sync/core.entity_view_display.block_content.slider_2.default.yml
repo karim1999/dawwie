@@ -1,0 +1,34 @@
+uuid: 85b7725f-3480-4fe1-b11b-6e2ef1760556
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.slider_2
+    - field.field.block_content.slider_2.field_slider2_items
+    - field.field.block_content.slider_2.field_slider2_title
+  module:
+    - entity_reference_revisions
+id: block_content.slider_2.default
+targetEntityType: block_content
+bundle: slider_2
+mode: default
+content:
+  field_slider2_items:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_slider2_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true

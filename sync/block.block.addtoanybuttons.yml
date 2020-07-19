@@ -1,0 +1,28 @@
+uuid: 58768262-e953-49ea-9c46-95ab0e7f50c8
+langcode: en
+status: false
+dependencies:
+  module:
+    - addtoany
+    - ctools
+  theme:
+    - dawwie
+id: addtoanybuttons
+theme: dawwie
+region: content
+weight: -1
+provider: null
+plugin: addtoany_block
+settings:
+  id: addtoany_block
+  label: 'AddToAny buttons'
+  provider: addtoany
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      course: course
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

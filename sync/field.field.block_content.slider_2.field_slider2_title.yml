@@ -1,0 +1,19 @@
+uuid: 368e1b92-2e26-4526-ab24-c17a6b11f69a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.slider_2
+    - field.storage.block_content.field_slider2_title
+id: block_content.slider_2.field_slider2_title
+field_name: field_slider2_title
+entity_type: block_content
+bundle: slider_2
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

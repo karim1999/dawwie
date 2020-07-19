@@ -1,0 +1,18 @@
+uuid: ffad339e-985b-4b16-873b-8050e840cb20
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.slider_2
+id: block_content.slider_2.info
+field_name: info
+entity_type: block_content
+bundle: slider_2
+label: 'Block description'
+description: 'A brief description of your block.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

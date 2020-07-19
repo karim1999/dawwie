@@ -1,0 +1,19 @@
+uuid: 93a30d5f-5b74-489d-b4c1-ca6f361a1594
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_story_content
+field_name: field_story_content
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

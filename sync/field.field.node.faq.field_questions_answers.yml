@@ -1,0 +1,46 @@
+uuid: 72c2e436-5375-4ce4-ae87-b8a7ce9b2554
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_questions_answers
+    - node.type.faq
+    - paragraphs.paragraphs_type.faq_question_answer_
+  module:
+    - entity_reference_revisions
+id: node.faq.field_questions_answers
+field_name: field_questions_answers
+entity_type: node
+bundle: faq
+label: 'Questions & Answers'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      faq_question_answer_: faq_question_answer_
+    target_bundles_drag_drop:
+      faq_question_answer_:
+        enabled: true
+        weight: 4
+      home_page_services:
+        weight: 5
+        enabled: false
+      home_page_slider:
+        weight: 6
+        enabled: false
+      course_features_list:
+        weight: 7
+        enabled: false
+      slider_2_items:
+        weight: 11
+        enabled: false
+      videos_slider_items:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

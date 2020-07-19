@@ -1,0 +1,9 @@
+uuid: 04cec0fa-fb09-4448-aa94-cc9680869402
+langcode: en
+status: true
+dependencies: {  }
+id: slider_2_items
+label: 'Slider 2 Items'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

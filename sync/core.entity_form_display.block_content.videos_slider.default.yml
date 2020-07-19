@@ -1,0 +1,54 @@
+uuid: 95f5ede2-0f48-46a6-a322-67a38888e893
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.videos_slider
+    - field.field.block_content.videos_slider.field_video_slider_items
+  module:
+    - paragraphs
+id: block_content.videos_slider.default
+targetEntityType: block_content
+bundle: videos_slider
+mode: default
+content:
+  field_video_slider_items:
+    type: paragraphs
+    weight: 26
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: videos_slider_items
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

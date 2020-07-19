@@ -1,0 +1,9 @@
+uuid: 65f8220f-0ec6-483a-8e04-f047673bf49d
+langcode: en
+status: true
+dependencies: {  }
+id: course_features_list
+label: 'Course Features List'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

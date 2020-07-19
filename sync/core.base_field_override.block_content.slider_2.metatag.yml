@@ -1,0 +1,18 @@
+uuid: 5bb93c93-0324-4d46-840d-8319eed67691
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.slider_2
+id: block_content.slider_2.metatag
+field_name: metatag
+entity_type: block_content
+bundle: slider_2
+label: Metatags
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

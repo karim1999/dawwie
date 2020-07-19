@@ -1,0 +1,8 @@
+uuid: 3cdacb7c-9771-40d5-a969-9b3a8c242b20
+langcode: en
+status: true
+dependencies: {  }
+id: slider_2
+label: 'Slider 2'
+revision: 0
+description: ''

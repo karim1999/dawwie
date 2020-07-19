@@ -1,0 +1,19 @@
+uuid: 69145c03-761d-4776-a824-a24f58362fc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_course_price
+    - node.type.course
+id: node.course.field_course_price
+field_name: field_course_price
+entity_type: node
+bundle: course
+label: Price
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,40 @@
+uuid: ff01e5f5-51ea-49c3-936f-31a36df5506a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.slider_2
+    - field.storage.block_content.field_slider2_items
+    - paragraphs.paragraphs_type.slider_2_items
+  module:
+    - entity_reference_revisions
+id: block_content.slider_2.field_slider2_items
+field_name: field_slider2_items
+entity_type: block_content
+bundle: slider_2
+label: Items
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      slider_2_items: slider_2_items
+    target_bundles_drag_drop:
+      faq_question_answer_:
+        weight: 5
+        enabled: false
+      home_page_services:
+        weight: 6
+        enabled: false
+      home_page_slider:
+        weight: 7
+        enabled: false
+      slider_2_items:
+        enabled: true
+        weight: 8
+field_type: entity_reference_revisions

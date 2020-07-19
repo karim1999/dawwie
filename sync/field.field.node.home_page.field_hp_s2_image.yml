@@ -1,0 +1,28 @@
+uuid: e40efb95-c84e-43b7-a780-1ac4c437965c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hp_s2_image
+    - media.type.image
+    - node.type.home_page
+id: node.home_page.field_hp_s2_image
+field_name: field_hp_s2_image
+entity_type: node
+bundle: home_page
+label: 'Section 2 Image'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

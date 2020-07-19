@@ -1,0 +1,276 @@
+uuid: 5b0c1991-4fef-4a0d-9ff9-3a888184b967
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.home_page.field_hp_s2_image
+    - field.field.node.home_page.field_hp_s2_summary
+    - field.field.node.home_page.field_hp_s2_title
+    - field.field.node.home_page.field_hp_s3_background_image
+    - field.field.node.home_page.field_hp_s3_items
+    - field.field.node.home_page.field_hp_s3_title
+    - field.field.node.home_page.field_hp_s4_images
+    - field.field.node.home_page.field_hp_s4_snippet
+    - field.field.node.home_page.field_hp_s4_title
+    - field.field.node.home_page.field_hp_s5_stories
+    - field.field.node.home_page.field_hp_s5_title
+    - field.field.node.home_page.field_hp_slider
+    - node.type.home_page
+  module:
+    - field_group
+    - media_library
+    - paragraphs
+    - text
+third_party_settings:
+  field_group:
+    group_home_page_tabs:
+      children:
+        - group_slider
+        - group_section_2
+        - group_section_3
+        - group_section_4
+        - group_section_5
+      parent_name: ''
+      weight: 2
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: 'Home Page Tabs'
+    group_slider:
+      children:
+        - field_hp_slider
+      parent_name: group_home_page_tabs
+      weight: 3
+      format_type: tab
+      region: content
+      format_settings:
+        description: ''
+        formatter: open
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Slider
+    group_section_2:
+      children:
+        - field_hp_s2_title
+        - field_hp_s2_summary
+        - field_hp_s2_image
+      parent_name: group_home_page_tabs
+      weight: 4
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Section 2'
+    group_section_3:
+      children:
+        - field_hp_s3_title
+        - field_hp_s3_background_image
+        - field_hp_s3_items
+      parent_name: group_home_page_tabs
+      weight: 5
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Section 3'
+    group_section_4:
+      children:
+        - field_hp_s4_title
+        - field_hp_s4_snippet
+        - field_hp_s4_images
+      parent_name: group_home_page_tabs
+      weight: 6
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Section 4'
+    group_section_5:
+      children:
+        - field_hp_s5_title
+        - field_hp_s5_stories
+      parent_name: group_home_page_tabs
+      weight: 7
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Section 5'
+id: node.home_page.default
+targetEntityType: node
+bundle: home_page
+mode: default
+content:
+  field_hp_s2_image:
+    type: media_library_widget
+    weight: 6
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_hp_s2_summary:
+    weight: 5
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 250
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+        maxlength_js_enforce: true
+        maxlength_js_truncate_html: true
+    type: text_textarea
+    region: content
+  field_hp_s2_title:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 50
+        maxlength_js_label: 'المحتوى محدود بـ  @limit حرف, متبق: <strong>@remaining</strong>'
+    type: string_textfield
+    region: content
+  field_hp_s3_background_image:
+    type: media_library_widget
+    weight: 8
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_hp_s3_items:
+    type: paragraphs
+    weight: 9
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: home_page_services
+      features:
+        duplicate: duplicate
+        add_above: add_above
+        collapse_edit_all: '0'
+    third_party_settings: {  }
+    region: content
+  field_hp_s3_title:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 50
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+    type: string_textfield
+    region: content
+  field_hp_s4_images:
+    type: media_library_widget
+    weight: 28
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_hp_s4_snippet:
+    weight: 27
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_hp_s4_title:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 50
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+    type: string_textfield
+    region: content
+  field_hp_s5_stories:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_hp_s5_title:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 50
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+    type: string_textfield
+    region: content
+  field_hp_slider:
+    type: paragraphs
+    weight: 5
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed_expand_nested
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: home_page_slider
+      features:
+        duplicate: duplicate
+        collapse_edit_all: '0'
+        add_above: '0'
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 0
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  translation: true
+  uid: true

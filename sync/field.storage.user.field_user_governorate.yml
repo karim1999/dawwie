@@ -1,0 +1,102 @@
+uuid: 5f90b39c-70cf-4595-ac4f-288d0f5988c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_user_governorate
+field_name: field_user_governorate
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: الإسكندرية
+      label: الإسكندرية
+    -
+      value: الإسماعيلية
+      label: الإسماعيلية
+    -
+      value: أسوان
+      label: أسوان
+    -
+      value: أسيوط
+      label: أسيوط
+    -
+      value: الأقصر
+      label: الأقصر
+    -
+      value: 'البحر الأحمر'
+      label: 'البحر الأحمر'
+    -
+      value: البحيرة
+      label: البحيرة
+    -
+      value: 'بني سويف'
+      label: 'بني سويف'
+    -
+      value: بورسعيد
+      label: بورسعيد
+    -
+      value: 'جنوب سيناء'
+      label: 'جنوب سيناء'
+    -
+      value: الجيزة
+      label: الجيزة
+    -
+      value: الدقهلية
+      label: الدقهلية
+    -
+      value: دمياط
+      label: دمياط
+    -
+      value: سوهاج
+      label: سوهاج
+    -
+      value: السويس
+      label: السويس
+    -
+      value: الشرقية
+      label: الشرقية
+    -
+      value: 'شمال سيناء'
+      label: 'شمال سيناء'
+    -
+      value: الغربية
+      label: الغربية
+    -
+      value: الفيوم
+      label: الفيوم
+    -
+      value: القاهرة
+      label: القاهرة
+    -
+      value: القليوبية
+      label: القليوبية
+    -
+      value: قنا
+      label: قنا
+    -
+      value: 'كفر الشيخ'
+      label: 'كفر الشيخ'
+    -
+      value: مطروح
+      label: مطروح
+    -
+      value: المنوفية
+      label: المنوفية
+    -
+      value: المنيا
+      label: المنيا
+    -
+      value: 'الوادي الجديد'
+      label: 'الوادي الجديد'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

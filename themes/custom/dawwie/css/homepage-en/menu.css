@@ -1,0 +1,97 @@
+/* 20 of 202 CSS properties converted by rtl.daskhat.ir 
+ These properties should be override originals. 
+ just load rtl css file after original css file.*/ 
+
+/* body {direction:rtl;} */
+
+.navbar-nav .dropdown-menu .dropdown-item:hover a{
+    margin-right: 4px;
+}
+
+.dropdown-menu{
+    text-align: right;
+}
+
+.dropdown-toggle::after{
+    margin-right: 5px;
+}
+
+.header-transparent .dropdown-toggle::after{
+    margin-right: 5px;
+}
+
+.dropdown-menu .dropdown-toggle::after{
+    left: 20px;
+}
+
+.dropdown-menu.megamenu{
+    right: 0;
+}
+
+.dropdown-menu.megamenu .megamenu-column{
+    float: right;
+}
+
+@media (max-width: 991px){
+    .navbar-collapse{
+        margin-right: 0;
+    }
+
+    .navbar-nav .dropdown-menu{
+        border-right: dashed 1px #494949;
+    }
+
+    .navbar-nav .nav-item ul.dropdown-menu li a{
+        padding-right: 10px;
+    }
+
+    .dropdown-toggle::after{
+        float: left;
+    }
+
+    .navbar-nav .nav-item ul.dropdown-menu li a::before{
+        right: -20px;
+    }
+
+    .dropdown-menu .dropdown-item{
+        padding-right: 20px;
+    }
+
+    .dropdown-menu.megamenu{
+        right: 0;
+    }
+
+}
+
+@media (min-width: 990px){
+    .navbar-nav{
+        padding-left: 15px;
+    }
+
+    .navbar-nav .nav-item{
+        margin-right: 16px;
+    }
+
+    .main-menu .navbar-nav{
+        text-align: left;
+        margin-left: auto;
+    }
+
+    .dropdown-menu{
+        text-align: left;
+    }
+
+    .dropdown-menu .dropdown-menu{
+        right: -100%;
+    }
+
+}
+.main-menu .navbar-nav {
+   
+    margin-right: 0 !important;
+}
+.navbar-nav .nav-item a, .navbar-nav .dropdown-item a, .navbar-expand-lg .navbar-nav .nav-link {
+    color: #262626;
+    font-size: 20px !important;
+    padding: 20px 0 !important;
+}

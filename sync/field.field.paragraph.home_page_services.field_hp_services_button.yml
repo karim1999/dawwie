@@ -1,0 +1,23 @@
+uuid: 73386a9d-6fe3-4d84-b477-8b872f439665
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hp_services_button
+    - paragraphs.paragraphs_type.home_page_services
+  module:
+    - link
+id: paragraph.home_page_services.field_hp_services_button
+field_name: field_hp_services_button
+entity_type: paragraph
+bundle: home_page_services
+label: Button
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 2
+field_type: link

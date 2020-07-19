@@ -1,0 +1,204 @@
+uuid: 511d8c26-580e-4987-9663-a5a0f66b738e
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 1
+template: false
+archive: false
+id: course_survey
+title: 'Pre Assessment'
+description: ''
+category: ''
+elements: "alm_lwmat_alshkhsyt:\n  '#type': fieldset\n  '#title': 'personal information'\n  '#format': details\n  status:\n    '#type': select\n    '#title': Status\n    '#options':\n      pre: قبل\n      post: بعد\n    '#required': true\n  total:\n    '#type': number\n    '#title': Total\n  name:\n    '#type': textfield\n    '#title': Name\n    '#required': true\n    '#default_value': '[current-user:name]'\n    '#wrapper_attributes':\n      class:\n        - 'col-md-6 col-xs-12'\n  gender:\n    '#type': select\n    '#title': Gender\n    '#title_display': invisible\n    '#options':\n      ذكر: Male\n      انثي: Female\n    '#empty_option': '- Gender - '\n    '#required': true\n    '#wrapper_attributes':\n      class:\n        - 'col-md-6 col-xs-12'\n  city:\n    '#type': textfield\n    '#title': 'City /Town'\n    '#required': true\n    '#wrapper_attributes':\n      class:\n        - 'col-md-6 col-xs-12'\n  govern:\n    '#type': select\n    '#title': Governorate\n    '#title_display': invisible\n    '#options':\n      الإسكندرية: Alexandria\n      الإسماعيلية: Ismailia\n      أسوان: Aswan\n      أسيوط: Asyut\n      الأقصر: Luxor\n      'البحر الأحمر': 'The Red Sea'\n      البحيرة: Alnehira\n      'بني سويف': 'Bani Sweif'\n      بورسعيد: 'Port Said'\n      'جنوب سيناء': 'South of Sinaa'\n      الجيزة: Giza\n      الدقهلية: Dakahlia\n      دمياط: Damietta\n      سوهاج: Sohag\n      السويس: Suez\n      الشرقية: 'Al Sharqia'\n      'شمال سيناء': 'North Sinai'\n      الغربية: 'Al Gharqia'\n      الفيوم: Fayoum\n      القاهرة: Cairo\n      القليوبية: Qaliubiya\n      قنا: Qena\n      'كفر الشيخ': 'Kafr El-Sheikh'\n      مطروح: Matruh\n      المنوفية: Menoufia\n      المنيا: Minya\n      'الوادي الجديد': 'The new Valley'\n    '#empty_option': '- Governorate -'\n    '#select2': true\n    '#required': true\n    '#wrapper_attributes':\n      class:\n        - 'col-md-6 col-xs-12'\n  education:\n    '#type': webform_select_other\n    '#title': 'Education level'\n    '#title_display': invisible\n    '#options':\n      ابتدائي: primary\n      ثانوي: 'High school'\n      جامعة: University\n    '#empty_option': '- Education level -'\n    '#other__option_label': 'Other (please report)'\n    '#other__placeholder': 'Other (please report)'\n    '#required': true\n    '#wrapper_attributes':\n      class:\n        - 'col-md-6 col-xs-12'\n  how_you_know_course:\n    '#type': webform_select_other\n    '#title': 'Where did you know about the course?'\n    '#options':\n      facebook: Facebook\n      meshwary_prog: 'Meshwary Program'\n      friend: Friend\n    '#empty_option': '- Where did you know about the course? -'\n    '#other__option_label': Other..\n    '#other__placeholder': 'Please add ...'\n    '#required': true\n    '#wrapper_attributes':\n      class:\n        - 'col-md-6 col-xs-12'\nevaluation_1:\n  '#type': radios\n  '#title': 'I feel that my views are worth listening to'\n  '#options':\n    4: Agree\n    1: 'somehow agree'\n    0: Neutral\n    '00': 'somehow disagree'\n    '000': Disagree\n  '#required': true\nevaluation_2:\n  '#type': radios\n  '#title': 'I feel that I can make a difference in my community through expressing my views freely off and online'\n  '#options':\n    4: Agree\n    1: 'somehow agree'\n    0: Neutral\n    '00': 'somehow disagree'\n    '000': Disagree\n  '#required': true\nevaluation_3:\n  '#type': radios\n  '#title': 'I feel I can get the information I need to make decisions/choices affecting my life'\n  '#options':\n    4: Agree\n    1: 'somehow agree'\n    0: Neutral\n    '00': 'somehow disagree'\n    '000': Disagree\n  '#required': true\nevaluation_4:\n  '#type': radios\n  '#title': 'I am confident expressing my views off and online'\n  '#options':\n    3: Agree\n    1: 'Somehow agree'\n    0: Neutral\n    '00': 'Somehow disagree'\n    '000': Disagree\n  '#required': true\nevaluation_5:\n  '#type': radios\n  '#title': 'I feel I can express myself using different digital tools'\n  '#options':\n    4: Agree\n    1: 'Somehow agree'\n    0: Neutral\n    '00': 'Somehow disagree'\n    '000': Disagree\n  '#required': true\nevaluation_6:\n  '#type': radios\n  '#title': 'I feel I can protect myself online'\n  '#options':\n    5: Agree\n    1: 'Somehow agree'\n    0: Neutral\n    '00': 'Somehow disagree'\n    '000': Disagree\n  '#required': true\nevaluation_7:\n  '#type': radios\n  '#title': 'I feel I have the ability to communicate with others online and offline'\n  '#options':\n    3: Agree\n    1: 'Somehow agree'\n    0: Neutral\n    '00': 'Somehow disagree'\n    '000': Disagree\n  '#required': true\nevaluation_8:\n  '#type': radios\n  '#title': 'I feel am able to assess synthesize and verify information using different digital media platforms'\n  '#options':\n    3: Agree\n    1: 'Somehow agree'\n    0: Neutral\n    '00': 'Somehow disagree'\n    '000': Disagree\n  '#required': true\nevaluation_9:\n  '#type': radios\n  '#title': 'I feel I am able to think in a critical manner- analyze information, argue and debate online and off line'\n  '#options':\n    3: Agree\n    1: 'Somehow agree'\n    0: Neutral\n    '00': 'Somehow disagree'\n    '000': Disagree\n  '#required': true\nevaluation_10:\n  '#type': radios\n  '#title': 'I feel am aware of digital media platform'\n  '#options':\n    3: Agree\n    1: 'Somehow agree'\n    0: Neutral\n    '00': 'Somehow disagree'\n    '000': Disagree\n  '#required': true\nevaluation_11:\n  '#type': radios\n  '#title': 'I feel I am more aware of my strengths and weaknesses expressing my views on and off line'\n  '#options':\n    3: Agree\n    1: 'Somehow agree'\n    0: Neutral\n    '00': 'Somehow disagree'\n    '000': Disagree\n  '#required': true\nevaluation_12:\n  '#type': radios\n  '#title': 'I am able to take action on issues that matter to me, either myself or together with groups of my peers, offline and/or online '\n  '#options':\n    4: Agree\n    1: 'Somehow agree'\n    0: Neutral\n    '00': 'Somehow disagree'\n    '000': Disagree\n  '#required': true\nevaluation_13:\n  '#type': radios\n  '#title': 'I would like to be a member of an (online or offline) youth network that promotes the rights of  children and adolescents'\n  '#options':\n    4: Agree\n    1: 'Somehow agree'\n    0: Neutral\n    '00': 'Somehow disagree'\n    '000': Disagree\n  '#required': true\nevaluation_14:\n  '#type': radios\n  '#title': 'I believe everyone  (girls and boys) expressed views are valid '\n  '#options':\n    4: Agree\n    1: 'Somehow agree'\n    0: Neutral\n    '00': 'Somehow disagree'\n    '000': Disagree\n  '#required': true\nevaluation_15:\n  '#type': radios\n  '#title': 'I believe I can influence others about topics important to me'\n  '#options':\n    4: Agree\n    1: 'Somehow agree'\n    0: Neutral\n    '00': 'Somehow disagree'\n    '000': Disagree\n  '#required': true\nevaluation_16:\n  '#type': radios\n  '#title': 'I feel I can provide support to my family/peers through my views'\n  '#options':\n    3: Agree\n    1: 'Somehow agree'\n    0: Neutral\n    '00': 'Somehow disagree'\n    '000': Disagree\n  '#required': true\nevaluation_17:\n  '#type': radios\n  '#title': 'I can influence decision makers in my school/community using digital media platforms '\n  '#options':\n    4: Agree\n    1: 'Somehow agree'\n    0: Neutral\n    '00': 'Somehow disagree'\n    '000': Disagree\n  '#required': true\nevaluation_18:\n  '#type': radios\n  '#title': 'I am able to teach other peers what I have learned about views using digital media '\n  '#options':\n    5: Agree\n    1: 'Somehow agree'\n    0: Neutral\n    '00': 'Somehow disagree'\n    '000': Disagree\n  '#required': true\nevaluation_19:\n  '#type': radios\n  '#title': 'I am able to understand where my rights and responsibilities and boundaries in expressing my views to others'\n  '#options':\n    4: Agree\n    1: 'Somehow agree'\n    0: Neutral\n    '00': 'Somehow disagree'\n    '000': Disagree\n  '#required': true\nevaluation_20:\n  '#type': radios\n  '#title': 'I feel confident in my ability to use online tools to get information to shape my decisions'\n  '#options':\n    4: Agree\n    1: 'Somehow agree'\n    0: Neutral\n    '00': 'Somehow disagree'\n    '000': Disagree\n  '#required': true\nevaluation_21:\n  '#type': radios\n  '#title': 'I feel I can form a strong argument online/offline about issues important to me'\n  '#options':\n    4: Agree\n    1: 'Somehow agree'\n    0: Neutral\n    '00': 'Somehow disagree'\n    '000': Disagree\n  '#required': true"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: ''
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_admin_theme: false
+  form_title: both
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_remote_addr: true
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace:
+    webform_routes: {  }
+    node_routes: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: true
+  autofill_message: ttttttt
+  autofill_excluded_elements:
+    status: status
+    total: total
+    evaluation_1: evaluation_1
+    evaluation_2: evaluation_2
+    evaluation_3: evaluation_3
+    evaluation_4: evaluation_4
+    evaluation_5: evaluation_5
+    evaluation_6: evaluation_6
+    evaluation_7: evaluation_7
+    evaluation_8: evaluation_8
+    evaluation_9: evaluation_9
+    evaluation_10: evaluation_10
+    evaluation_11: evaluation_11
+    evaluation_12: evaluation_12
+    evaluation_13: evaluation_13
+    evaluation_14: evaluation_14
+    evaluation_15: evaluation_15
+    evaluation_16: evaluation_16
+    evaluation_17: evaluation_17
+    evaluation_18: evaluation_18
+    evaluation_19: evaluation_19
+    evaluation_20: evaluation_20
+    evaluation_21: evaluation_21
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_title: 'Thanks for your time.'
+  confirmation_message: "Sent Succesfully...\r\n<div id=\"gtx-trans\" style=\"position: absolute; left: 1153px; top: -20px;\">\r\n<div class=\"gtx-trans-icon\">&nbsp;</div>\r\n</div>"
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: 'لقد تم التسجيل فى هذه النموذج من قبل..'
+  limit_total_unique: false
+  limit_user: 2
+  limit_user_interval: null
+  limit_user_message: "You already been registered ..\r\n<div id=\"gtx-trans\" style=\"position: absolute; left: 1024px; top: -20px;\">\r\n<div class=\"gtx-trans-icon\">&nbsp;</div>\r\n</div>"
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+access:
+  create:
+    roles:
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants: {  }

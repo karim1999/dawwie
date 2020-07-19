@@ -1,0 +1,6 @@
+included_selectors: ".page-user-register .user-register-form *\r\n.page-user-password .user-pass *\r\n.front-reg-form .user-register-form *\r\n.path-webform .webform-submission-course-survey-form *"
+excluded_selectors: ''
+required_indicator: leave
+_core:
+  default_config_hash: fvvuim-Xfi2KRJiSVE9-Lj7cD6aDfjQxQ3Xnoe0TG18
+langcode: ar

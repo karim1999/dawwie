@@ -1,0 +1,14 @@
+uuid: 4a791175-a443-420c-8f26-dd758fd987b1
+langcode: ar
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: Mb_L3vE-0IBZH5s2rjpk2LNn0QHClQP9AARQdCmVLt4
+id: translations
+label: Translations
+category: اللغة
+likert: false
+options: ''

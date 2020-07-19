@@ -1,0 +1,28 @@
+uuid: 84e705a7-56d2-44bd-8038-52ce4b147aaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hp_slider_image
+    - media.type.image
+    - paragraphs.paragraphs_type.home_page_slider
+id: paragraph.home_page_slider.field_hp_slider_image
+field_name: field_hp_slider_image
+entity_type: paragraph
+bundle: home_page_slider
+label: 'Or Image'
+description: 'Upload image only in case you didn''t insert the above YouTube link.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

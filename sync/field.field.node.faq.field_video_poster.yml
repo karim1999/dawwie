@@ -1,0 +1,28 @@
+uuid: 53679108-0a66-4cad-840f-857508d60729
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_poster
+    - media.type.image
+    - node.type.faq
+id: node.faq.field_video_poster
+field_name: field_video_poster
+entity_type: node
+bundle: faq
+label: 'Video Poster'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

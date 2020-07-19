@@ -1,0 +1,14 @@
+uuid: ad10d7bf-d04d-4c30-a908-a53a08c9485a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: generic_path
+label: 'Generic Path'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

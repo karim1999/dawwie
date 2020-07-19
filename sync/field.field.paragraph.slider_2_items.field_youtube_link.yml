@@ -1,0 +1,23 @@
+uuid: 3c250799-db7e-481b-be7d-89766513e8ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_youtube_link
+    - paragraphs.paragraphs_type.slider_2_items
+  module:
+    - link
+id: paragraph.slider_2_items.field_youtube_link
+field_name: field_youtube_link
+entity_type: paragraph
+bundle: slider_2_items
+label: 'YouTube Link'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

@@ -1,0 +1,22 @@
+uuid: 397906d4-a4f6-4136-a971-9a32509b1d50
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dawwie
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: dawwie_breadcrumbs
+theme: dawwie
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

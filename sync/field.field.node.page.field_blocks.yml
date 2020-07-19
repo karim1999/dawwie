@@ -1,0 +1,33 @@
+uuid: bbed15ed-7bb7-4f10-aa21-9cf7a08518ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_blocks
+    - node.type.page
+  module:
+    - block_field
+id: node.page.field_blocks
+field_name: field_blocks
+entity_type: node
+bundle: page
+label: Blocks
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  plugin_ids:
+    'block_content:b5aa7792-fa26-41cd-8985-461c2f69a604': 'block_content:b5aa7792-fa26-41cd-8985-461c2f69a604'
+    'block_content:2f46d019-d398-4a28-9df4-f76fe339d223': 'block_content:2f46d019-d398-4a28-9df4-f76fe339d223'
+    'block_content:6fc445f4-b739-4c34-9d70-9941701e3769': 'block_content:6fc445f4-b739-4c34-9d70-9941701e3769'
+    'block_content:b1f84cfb-eaf4-46fc-bc92-d2e583f67c2c': 'block_content:b1f84cfb-eaf4-46fc-bc92-d2e583f67c2c'
+    'block_content:c85b4835-6f88-417a-bddc-1ef56290b089': 'block_content:c85b4835-6f88-417a-bddc-1ef56290b089'
+    'block_content:7c681f9d-973b-460e-85bc-189069aeb8a9': 'block_content:7c681f9d-973b-460e-85bc-189069aeb8a9'
+    'block_content:26ad3d1d-ab17-4414-b815-081a1cb9918d': 'block_content:26ad3d1d-ab17-4414-b815-081a1cb9918d'
+    'block_content:710558ec-7306-4408-b96e-f4ea261286d8': 'block_content:710558ec-7306-4408-b96e-f4ea261286d8'
+    'block_content:b5680055-3682-4834-ab62-5de14d598b5c': 'block_content:b5680055-3682-4834-ab62-5de14d598b5c'
+    'block_content:6a1db341-a58f-493c-85e9-a79243a14177': 'block_content:6a1db341-a58f-493c-85e9-a79243a14177'
+    'block_content:6af7fb73-fe0b-4868-a4dd-fa670d5994a6': 'block_content:6af7fb73-fe0b-4868-a4dd-fa670d5994a6'
+field_type: block_field

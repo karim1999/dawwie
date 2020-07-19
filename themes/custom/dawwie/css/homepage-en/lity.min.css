@@ -1,0 +1,36 @@
+/* 10 of 142 CSS properties converted by rtl.daskhat.ir 
+ These properties should be override originals. 
+ just load rtl css file after original css file.*/ 
+
+/* body {direction:rtl;} */
+
+.lity{
+    left: 0;
+    right: 0;
+}
+
+.lity-wrap{
+    left: 0;
+    right: 0;
+}
+
+.lity-wrap:before{
+    margin-left: -0.25em;
+}
+
+.lity-container{
+    text-align: right;
+}
+
+.lity-content:after{
+    right: 0;
+    left: 0;
+}
+
+.lity-close{
+    left: 0;
+}
+
+.lity-iframe-container iframe{
+    right: 0;
+}

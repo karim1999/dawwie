@@ -1,0 +1,19 @@
+uuid: 2f0f8188-95a7-4c54-8934-ab503271980f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hp_s2_title
+    - node.type.home_page
+id: node.home_page.field_hp_s2_title
+field_name: field_hp_s2_title
+entity_type: node
+bundle: home_page
+label: 'Section 2 Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

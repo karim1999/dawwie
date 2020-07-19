@@ -1,0 +1,21 @@
+uuid: 0a38613d-6634-4838-84fe-d0a0e9b9cfb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hp_s2_summary
+    - node.type.home_page
+  module:
+    - text
+id: node.home_page.field_hp_s2_summary
+field_name: field_hp_s2_summary
+entity_type: node
+bundle: home_page
+label: 'Section 2 Summary'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

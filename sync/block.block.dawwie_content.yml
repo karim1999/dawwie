@@ -1,0 +1,22 @@
+uuid: fb1e2d34-6d72-4ef9-9bd4-8e596b68f3f4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dawwie
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: dawwie_content
+theme: dawwie
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

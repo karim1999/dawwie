@@ -1,0 +1,21 @@
+uuid: ab77171c-1d15-41c3-908f-c6e2f4fff45f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.slider
+    - field.storage.block_content.field_slider_content
+  module:
+    - text
+id: block_content.slider.field_slider_content
+field_name: field_slider_content
+entity_type: block_content
+bundle: slider
+label: Content
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

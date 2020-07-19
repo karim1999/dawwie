@@ -1,0 +1,14 @@
+uuid: c8e7387b-501d-4855-a0d9-8579447f888e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.cms_admin
+  module:
+    - user
+id: user_add_role_action.cms_admin
+label: 'Add the CMS Admin role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: cms_admin

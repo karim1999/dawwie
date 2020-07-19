@@ -1,0 +1,27 @@
+uuid: daf1d0ed-806f-4c7c-ac0f-02b71ba6adc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_trainer_guide
+    - node.type.course
+  module:
+    - file
+id: node.course.field_trainer_guide
+field_name: field_trainer_guide
+entity_type: node
+bundle: course
+label: 'Trainer Guide'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf doc docx ppt'
+  max_filesize: '10 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

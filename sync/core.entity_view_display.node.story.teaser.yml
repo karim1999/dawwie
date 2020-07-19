@@ -1,0 +1,25 @@
+uuid: 1164ce2f-07b5-48ed-a29e-a08d74db6be9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.story.field_story_content
+    - field.field.node.story.field_story_photo
+    - node.type.story
+  module:
+    - user
+id: node.story.teaser
+targetEntityType: node
+bundle: story
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_story_content: true
+  field_story_photo: true
+  langcode: true

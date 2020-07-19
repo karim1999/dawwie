@@ -1,0 +1,11 @@
+uuid: 97286819-fcc6-4460-951c-d58589bfd516
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:6064c814-0fa6-422c-98e5-48ae48727d14'
+id: home_page_slider
+label: 'Home Page Slider'
+icon_uuid: 6064c814-0fa6-422c-98e5-48ae48727d14
+description: 'Home Page Slider.'
+behavior_plugins: {  }

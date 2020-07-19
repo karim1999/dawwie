@@ -1,0 +1,19 @@
+uuid: bc9811b4-a6d6-4e65-8f9c-1b59e53cb80d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_course_register
+    - node.type.course
+id: node.course.field_course_register
+field_name: field_course_register
+entity_type: node
+bundle: course
+label: Register
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

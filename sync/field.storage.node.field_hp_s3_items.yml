@@ -1,0 +1,21 @@
+uuid: 6e23e47d-6b12-4973-a6b0-bd0f55b1b76e
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - node
+    - paragraphs
+id: node.field_hp_s3_items
+field_name: field_hp_s3_items
+entity_type: node
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

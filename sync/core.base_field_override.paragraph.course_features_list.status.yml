@@ -1,0 +1,22 @@
+uuid: 6094ab13-2ee3-440e-a64e-2ae22bb41fbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.course_features_list
+id: paragraph.course_features_list.status
+field_name: status
+entity_type: paragraph
+bundle: course_features_list
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

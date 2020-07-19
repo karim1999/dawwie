@@ -1,0 +1,537 @@
+/* 142 of 1240 CSS properties converted by rtl.daskhat.ir 
+ These properties should be override originals. 
+ just load rtl css file after original css file.*/ 
+
+/* body {direction:rtl;} */
+
+.burger-menu{
+    left: 14px;
+}
+
+.navik-menu ul ul li > a{
+    padding: 14px 30px 14px 15px ;
+}
+
+.navik-menu ul ul ul li > a{
+    padding: 14px 45px 14px 15px ;
+}
+
+.dropdown-plus{
+    left: 0;
+}
+
+.dropdown-plus:before,   .dropdown-plus:after{
+    left: 18px;
+}
+
+.header-shadow-wrapper{
+    right: 0;
+}
+
+.navik-header-overlay{
+    right: 0;
+}
+
+.navik-header-overlay .logo{
+    right: 15px;
+}
+
+.navik-header-overlay .burger-menu,   .navik-fixed-sidebar + .burger-menu{
+    left: 15px;
+}
+
+.nav-menu-wrapper{
+    right: 0;
+}
+
+.navik-menu-overlay > ul{
+    text-align: left;
+}
+
+.navik-menu-overlay > ul > li{
+    padding: 0 15px 0 65px ;
+}
+
+.overlay-dropdown-plus{
+    left: 30px;
+}
+
+.overlay-dropdown-plus:before,   .overlay-dropdown-plus:after{
+    left: 5px;
+}
+
+.navik-menu-overlay > ul ul li{
+    margin-right: 32px;
+}
+
+.navik-menu-overlay > ul > li > ul > li:after,   .navik-header-overlay.menu-slide .navik-menu-overlay > ul ul li a::before{
+    right: -18px;
+}
+
+.navik-menu-overlay > ul > li > ul > li:first-child{
+    margin-right: 0;
+}
+
+.navik-menu-overlay.submenu-no-separate > ul ul li{
+    margin-right: 20px;
+}
+
+.submenu-vertical > ul ul li{
+    margin-right: 0 !important;
+}
+
+.submenu-vertical > ul > li ul{
+    left: -30px;
+    padding-left: 30px !important;
+}
+
+.submenu-vertical > ul > li > ul li .overlay-dropdown-plus{
+    left: -35px;
+}
+
+.overlay-center-menu .submenu-vertical > ul > li > ul li .overlay-dropdown-plus{
+    left: -30px;
+}
+
+.overlay-center-menu .submenu-vertical > ul > li ul{
+    left: 0 !important;
+    padding-left: 0px !important;
+}
+
+.menu-social-media{
+    left: 0;
+    text-align: left;
+}
+
+.menu-social-media a img{
+    right: 50%;
+}
+
+.overlay-center-menu .overlay-dropdown-plus{
+    left: -30px;
+}
+
+.navik-header-overlay.menu-slide .nav-menu-wrapper{
+    right: inherit;
+    left: 0;
+}
+
+.slidemenu-bg-overlay{
+    right: 0;
+}
+
+.navik-header-overlay.menu-slide .navik-menu-overlay > ul ul li a{
+    padding-right: 20px;
+}
+
+.navik-header-overlay.menu-slide .navik-menu-overlay.submenu-no-separate > ul ul li a{
+    padding-right: 15px;
+}
+
+.navik-header-overlay.menu-slide .navik-menu-overlay > ul{
+    text-align: right;
+}
+
+.navik-header-overlay.menu-slide .navik-menu-overlay > ul > li{
+    padding: 0 30px 0 35px ;
+}
+
+.navik-header-overlay.menu-slide .navik-menu-overlay > ul > li ul .overlay-dropdown-plus{
+    left: -5px;
+}
+
+.navik-header-overlay.menu-slide .navik-menu-overlay .menu-overlay-link{
+    padding-left: 30px;
+}
+
+.navik-header-overlay.menu-slide .menu-social-media{
+    left: inherit;
+    right: 0;
+    text-align: right;
+}
+
+.navik-header-overlay.menu-slide .menu-social-media a{
+    margin: 0 0 6px 6px ;
+}
+
+.navik-header-overlay.menu-slide .navik-menu-overlay > ul > li > ul ul{
+    padding-right: 20px;
+}
+
+.navik-header-overlay.menu-slide .navik-menu-overlay > ul > li > ul li{
+    margin-right: 0 !important;
+}
+
+.navik-header-overlay.menu-slide .navik-menu-overlay > ul ul li a:hover{
+    padding-right: 30px;
+}
+
+.navik-header-overlay.menu-slide .navik-menu-overlay.submenu-no-separate > ul ul li a:hover{
+    padding-right: 25px;
+}
+
+.navik-header-overlay.menu-slide .navik-menu-overlay > ul ul li a::before{
+    right: 5px;
+}
+
+.navik-menu ul.mega-menu-list ul{
+    padding-right: 15px !important;
+}
+
+.navik-menu .mega-menu-thumbnail > a:before{
+    right: 0;
+}
+
+.navik-sidebar-left{
+    right: 0;
+}
+
+.navik-sidebar-right{
+    left: 0;
+}
+
+.navik-fixed-sidebar .menu-social-media{
+    text-align: right;
+}
+
+.navik-fixed-sidebar .menu-social-media a{
+    margin: 0 0 6px 6px ;
+}
+
+.navik-fixed-sidebar .menu-social-media a:last-child{
+    margin-left: 0;
+}
+
+.navik-sidebar-left + .burger-menu{
+    left: inherit;
+    right: 0;
+}
+
+.navik-sidebar-right + .burger-menu{
+    left: 0;
+}
+
+.fixedsidebar-bg-overlay{
+    right: 0;
+}
+
+.navik-side-content > .logo{
+    right: 0;
+}
+
+.navik-menu-fixed ul li a{
+    padding-left: 17px;
+}
+
+.navik-menu-fixed > ul ul a{
+    padding-right: 18px;
+}
+
+.navik-menu-fixed > ul ul a::before{
+    right: 4px;
+}
+
+.navik-menu-fixed > ul ul a:hover{
+    padding-right: 24px;
+}
+
+.navik-menu-fixed > ul > li > ul > li ul{
+    padding-right: 18px;
+}
+
+.navik-menu-fixed .overlay-dropdown-plus{
+    left: -7px;
+}
+
+.navik-menu-fixed.submenu-no-separate > ul ul a,   .navik-menu-fixed.submenu-no-separate > ul > li > ul > li ul{
+    padding-right: 12px;
+}
+
+.navik-menu-fixed.submenu-no-separate > ul ul a:hover{
+    padding-right: 18px;
+}
+
+.navik-menu .navik-menu-icon{
+    margin-left: 5px;
+}
+
+.navik-menu-overlay .navik-menu-icon{
+    margin-left: 10px;
+}
+
+.navik-menu-overlay > ul ul li a .navik-menu-icon{
+    margin-left: 7px;
+}
+
+.menu-slide .navik-menu-overlay > ul ul li a .navik-menu-icon{
+    margin-left: 5px;
+}
+
+.navik-menu-fixed .navik-menu-icon{
+    margin-left: 5px;
+}
+
+@media (min-width: 768px){
+    .navik-header .logo{
+        float: left;
+        padding: 30px 0 30px 40px ;
+    }
+
+    .navik-header-overlay .logo{
+        right: 30px;
+    }
+
+    .navik-header-overlay .burger-menu{
+        left: 30px;
+    }
+
+    .navik-menu-overlay > ul > li{
+        padding: 0 30px 0 110px ;
+    }
+
+    .overlay-dropdown-plus{
+        left: 43px;
+    }
+
+    .overlay-dropdown-plus:before,  .overlay-dropdown-plus:after{
+        left: 7px;
+    }
+
+    .navik-menu-overlay > ul ul li{
+        margin-right: 42px;
+    }
+
+    .navik-menu-overlay > ul > li > ul > li:after{
+        right: -23px;
+    }
+
+    .overlay-center-menu .overlay-dropdown-plus{
+        left: -42px;
+    }
+
+    .submenu-vertical > ul > li ul{
+        left: -60px;
+        padding-left: 60px !important;
+    }
+
+    .submenu-vertical > ul > li > ul li .overlay-dropdown-plus{
+        left: -67px;
+    }
+
+    .overlay-center-menu .submenu-vertical > ul > li > ul li .overlay-dropdown-plus{
+        left: -42px;
+    }
+
+    .navik-header-overlay.menu-slide .navik-menu-overlay > ul > li{
+        padding: 0 45px 0 60px ;
+    }
+
+    .navik-header-overlay.menu-slide .navik-menu-overlay > ul ul li a{
+        padding-right: 23px;
+    }
+
+    .navik-header-overlay.menu-slide .navik-menu-overlay.submenu-no-separate > ul ul li a{
+        padding-right: 15px;
+    }
+
+    .navik-header-overlay.menu-slide .navik-menu-overlay > ul ul li a:hover{
+        padding-right: 33px;
+    }
+
+    .navik-header-overlay.menu-slide .navik-menu-overlay.submenu-no-separate > ul ul li a:hover{
+        padding-right: 25px;
+    }
+
+    .navik-header-overlay.menu-slide .navik-menu-overlay > ul ul li a::before{
+        right: 5px;
+    }
+
+    .navik-header-overlay.menu-slide .navik-menu-overlay > ul > li > ul ul{
+        padding-right: 23px;
+    }
+
+    .navik-header-overlay.menu-slide .navik-menu-overlay > ul > li ul .overlay-dropdown-plus{
+        left: -17px;
+    }
+
+    .navik-menu .mega-menu-media-info{
+        padding-right: 20px;
+    }
+
+    .navik-menu-overlay .navik-menu-icon{
+        margin-left: 12px;
+    }
+
+    .menu-slide .navik-menu-overlay .navik-menu-icon{
+        margin-left: 10px;
+    }
+
+    .navik-menu-overlay > ul ul li a .navik-menu-icon{
+        margin-left: 8px;
+    }
+
+    .navik-menu-overlay.submenu-no-separate > ul ul li{
+        margin-right: 25px;
+    }
+
+}
+
+@media (min-width: 1200px){
+    .navik-menu{
+        float: right;
+    }
+
+    .navik-menu ul li.dropdown_menu > a > span:before{
+        border-width: 2px 0 0 2px ;
+        margin-right: 8px;
+    }
+
+    .navik-menu li > ul{
+        right: 0;
+    }
+
+    .navik-menu li.submenu-right > ul{
+        right: inherit;
+        left: 0;
+    }
+
+    .navik-menu li > ul ul{
+        right: 100%;
+    }
+
+    .navik-menu li.submenu-right > ul ul{
+        right: -100% !important;
+    }
+
+    .navik-menu ul ul li.dropdown_menu > a > span:before{
+        float: left;
+        left: -10px;
+    }
+
+    .navik-menu ul ul li:hover > a{
+        padding-right: 55px !important;
+    }
+
+    .navik-menu ul ul li > a:before{
+        right: 35px;
+    }
+
+    .navik-menu.separate-line > ul > li > a:before{
+        left: 0;
+    }
+
+    .navik-menu.separate-line > ul > li:last-child > a{
+        padding: 0 28px 0 0 ;
+    }
+
+    .navik-header.sticky .logo{
+        padding: 0 0 0 40px ;
+    }
+
+    .center-menu-1 .navik-menu > ul:first-child{
+        text-align: left;
+    }
+
+    .center-menu-1 .navik-menu > ul:first-child ul{
+        text-align: right;
+    }
+
+    .center-menu-1 .navik-menu > ul:last-child{
+        text-align: right;
+    }
+
+    .center-menu-2 .navik-menu li > ul{
+        text-align: right;
+    }
+
+    .navik-menu.menu-hover-2 > ul > li > a:after,   .navik-menu.menu-hover-3 > ul > li > a:after{
+        right: 0;
+    }
+
+    .navik-menu.menu-hover-3 > ul > li > a:after{
+        right: 50%;
+    }
+
+    .navik-menu.menu-hover-4 > ul > li > a > .hover-transition{
+        right: 0;
+    }
+
+    .navik-menu.menu-hover-4 > ul > li > a > .hover-transition:after{
+        right: 50%;
+    }
+
+    .navik-menu.submenu-list-border ul ul li:first-child > a{
+        padding: 8px 35px 14px 35px !important;
+    }
+
+    .navik-menu.submenu-list-border ul ul li:last-child > a{
+        padding: 15px 35px 8px 35px !important;
+    }
+
+    .navik-menu.submenu-list-border ul ul li:after{
+        right: 35px;
+        left: 35px;
+    }
+
+    .navik-menu.submenu-list-border ul ul li:hover > a{
+        padding-right: 55px !important;
+    }
+
+    .navik-header-overlay .logo{
+        right: 40px;
+    }
+
+    .navik-header-overlay .burger-menu{
+        left: 40px;
+    }
+
+    .navik-menu-overlay > ul > li{
+        padding: 0 40px 0 130px ;
+    }
+
+    .overlay-dropdown-plus{
+        left: 53px;
+    }
+
+    .submenu-vertical > ul > li ul{
+        left: -70px;
+        padding-left: 70px !important;
+    }
+
+    .submenu-vertical > ul > li > ul li .overlay-dropdown-plus{
+        left: -77px;
+    }
+
+    .navik-header-overlay.menu-slide .navik-menu-overlay > ul > li ul .overlay-dropdown-plus{
+        left: -7px;
+    }
+
+    .navik-menu ul li.mega-menu{
+        float: left;
+    }
+
+    .navik-menu .mega-menu-container li ul,   .navik-menu.submenu-top-border .mega-menu-container li ul,   .navik-menu.submenu-list-border .mega-menu-container li ul{
+        right: inherit;
+    }
+
+    .navik-menu li.mega-menu.submenu-right > ul ul{
+        right: inherit !important;
+    }
+
+    .navik-menu .mega-menu-container ul.mega-menu-list li a:hover,  .navik-menu.submenu-list-border .mega-menu-container ul.mega-menu-list li a:hover{
+        padding-right: 20px !important;
+    }
+
+    .navik-menu .mega-menu-container ul.mega-menu-list li > a:before{
+        right: 0;
+    }
+
+    .navik-sidebar-left ~ .fixedsidebar-bg-overlay + .navik-side-content{
+        margin-right: auto;
+    }
+
+    .navik-sidebar-right ~ .fixedsidebar-bg-overlay + .navik-side-content{
+        margin-left: auto;
+    }
+
+}

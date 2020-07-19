@@ -1,0 +1,45 @@
+uuid: 39f04662-6d5a-4ff8-a443-648cb9c707c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.home_page.field_hp_s2_image
+    - field.field.node.home_page.field_hp_s2_summary
+    - field.field.node.home_page.field_hp_s2_title
+    - field.field.node.home_page.field_hp_s3_background_image
+    - field.field.node.home_page.field_hp_s3_items
+    - field.field.node.home_page.field_hp_s3_title
+    - field.field.node.home_page.field_hp_s4_images
+    - field.field.node.home_page.field_hp_s4_snippet
+    - field.field.node.home_page.field_hp_s4_title
+    - field.field.node.home_page.field_hp_s5_stories
+    - field.field.node.home_page.field_hp_s5_title
+    - field.field.node.home_page.field_hp_slider
+    - node.type.home_page
+  module:
+    - user
+id: node.home_page.teaser
+targetEntityType: node
+bundle: home_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_hp_s2_image: true
+  field_hp_s2_summary: true
+  field_hp_s2_title: true
+  field_hp_s3_background_image: true
+  field_hp_s3_items: true
+  field_hp_s3_title: true
+  field_hp_s4_images: true
+  field_hp_s4_snippet: true
+  field_hp_s4_title: true
+  field_hp_s5_stories: true
+  field_hp_s5_title: true
+  field_hp_slider: true
+  langcode: true

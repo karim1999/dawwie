@@ -1,0 +1,21 @@
+uuid: edc230b9-a338-4711-86ad-e73121c73c10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_user_governorate
+  module:
+    - options
+    - user
+id: user.user.field_user_governorate
+field_name: field_user_governorate
+entity_type: user
+bundle: user
+label: المحافظة
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

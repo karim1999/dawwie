@@ -1,0 +1,19 @@
+uuid: 251cb347-ad02-4a50-bd25-3f3411352d9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hp_s4_title
+    - node.type.home_page
+id: node.home_page.field_hp_s4_title
+field_name: field_hp_s4_title
+entity_type: node
+bundle: home_page
+label: 'Section 4 Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
