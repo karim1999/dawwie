@@ -1,0 +1,20 @@
+{%if is_front%}
+    <header class="header">
+        <div class="container-fluid">
+            <div class="col-lg-12">
+                {{page.header}}
+            </div>
+        </div>
+    </header>
+{%else%}
+    <header class="navik-header header-dark header-shadow">
+        <div class="container">
+            <!-- Navik header -->
+            <div class="navik-header-container">
+                {{page.header}}
+            </div>
+        </div>
+    </header>
+{%endif%}
+
+

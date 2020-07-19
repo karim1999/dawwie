@@ -1,0 +1,5 @@
+name: Dawwie Theme Custom Functions.
+type: module
+description: 'Custom functions related to the Dawwie theme'
+package: Custom
+core: '8.x'

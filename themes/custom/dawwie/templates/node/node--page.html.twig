@@ -1,0 +1,23 @@
+<!-- Page Cover -->
+<section class="page-cover darkOverlay sm-sectionPT sm-sectionPB text-center" style="background-image: url({{ file_url(node.field_top_image.entity.field_media_image.entity.fileuri) }});">
+    <div class="col-center text-center col-md-8 col-lg-7">
+        <h4 class="heading text-color-white1 mt10 mb20">{{ node.label }}</h4>
+        <ul class="breadcrumb">
+            <li class="text-color-white1"><a href="{{frontpage}}">{{'Home'|t}}</a></li>
+            <li class="active text-color-white1">{{ node.label }}</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Trusted Section -->
+<section class="HGT550 background-cover sectionPT" style="background-image: url({{ file_url(node.field_main_content_bg.entity.field_media_image.entity.fileuri) }})">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-center textCenter">
+                {{content.field_main_content.0}}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Trusted Section -->
+{{content.field_blocks}}

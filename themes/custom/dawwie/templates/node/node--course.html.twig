@@ -1,0 +1,144 @@
+<!-- Page Cover -->
+<section class="page-cover darkOverlay sm-sectionPT sm-sectionPB text-center" style="background-image: url({{ file_url(node.field_top_image.entity.field_media_image.entity.fileuri) }});">
+    <div class="col-center text-center col-md-8 col-lg-7">
+        <h4 class="heading text-color-white1 mt10 mb20">{{ node.label }}</h4>
+        <ul class="breadcrumb">
+            <li class="text-color-white1"><a href="{{frontpage}}">{{'Home'|t}}</a></li>
+            <li class="active text-color-white1">{{ node.label }}</li>
+        </ul>
+    </div>
+</section>
+
+<section class="courses_details_area pt-80 pb-130">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 order-lg-last">
+                <div class="courses_details_sidebar">
+                    <div class="courses_sidebar_image">
+                        <img src="{{ base_path ~ directory }}/img/courses-details.jpg" alt="التعلم الرقمي" />
+                        <div class="price">
+                            <div class="price_wrapper">
+                                <p>{{content.field_course_price.0}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="courses_sidebar_title">
+                        <h4 class="title">{{'Course Details'|t}}</h4>
+                    </div>
+                    <div class="courses_sidebar_list">
+                        <ul class="list">
+                            <li><i class="fa fa-clock-o"></i>{{'Duration'|t}} <span>{{content.field_course_duration.0}}</span></li>
+                            <li><i class="fa fa-files-o"></i>{{'Language'|t}}<span>{{content.field_course_language.0}}</span></li>
+                            <li><i class="fa fa-puzzle-piece"></i>{{'Certificate'|t}}<span>{{content.field_course_certificate.0}}</span></li>
+                            <li><i class="fa fa-list"></i>{{'Parts'|t}}<span>{{content.field_course_parts.0}}</span></li>
+                            <li><i class="fa fa-users"></i>{{'Register'|t}}<span>{{content.field_course_register.0}}</span></li>
+                        </ul>
+                        <ul class="social">
+                            <li><a target="_blank" href="{{file_url(node.field_trainer_guide.entity.uri.value)}}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>{{'Download the coaches guide'|t}}</a></li>
+                            <li><a target="_blank" href="{{file_url(node.field_course_guide.entity.uri.value)}}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>{{'Download the trainees guide'|t}}</a></li>
+                        </ul>
+                        <ul class="list">
+                            {% for item in node.field_course_features %}
+                                <li> {{ item.entity.translation(language).field_features_list_title.value }}  
+                                    <p>{{ item.entity.translation(language).field_features_list_description.value }}</p>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 order-lg-first">
+                {% if highlighted %}
+                    <div class="highlighted">
+                        <aside class="{{ container }} section clearfix" role="complementary">
+                            {{ highlighted }}
+                        </aside>
+                    </div>
+                {% endif %}
+                <div class="new-btn">
+                    {%if logged_in %}
+                        <a href="/{{language}}/form/course-survey?status=pre&destination=/OnlineTRaining/{{language}}/story_html5.html" id="" class="button-hover course-start-now" style="vertical-align:middle"><span>{{'Start now'|t}}</span></a>
+                    {%else%}
+                        <button id="myBtn" class="button-hover" style="vertical-align:middle"><span>{{'Register now'|t}}</span></button>
+                    {%endif%}
+                    <ul class="review_star">
+                        <li><span><i class="fa fa-star"></i></span></li>
+                        <li><span><i class="fa fa-star"></i></span></li>
+                        <li><span><i class="fa fa-star"></i></span></li>
+                        <li><span><i class="fa fa-star"></i></span></li>
+                        <li><span><i class="fa fa-star"></i></span></li>
+                    </ul>
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <!--<span class="close">&times;</span>-->
+                            <section class="sectionPT sectionPB bg-color-light3 s0">
+                                <div class="container">
+                                    <div class="row row-eq-height">
+                                        <div class="col-md-6 padding0">
+                                            <span class="closeq">&times;</span>
+                                            <div class="form_area bg-color-light1 front-reg-form">
+                                                {{register_form}}
+                                                <p class="text-center mb20 mt20">
+                                                    {{'Already have an account?'|t}} <a href="{{ base_path}}{{language}}/user/login?destination={{ path('entity.node.canonical', {'node': node.id}) }}" class="text-colorPrimary">{{'Login'|t}}</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 img_area background-cover" style="
+                                             background-image: url('{{ base_path ~ directory }}/img/new-im.jpg');
+                                             ">
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="courses_details_content">
+                    {{content.body.0}}
+                </div>
+                <div class="courses_details_content">
+                <br>
+                    <h4 class="courses_details_title">{{'Share the course'|t}}</h4>
+                    <br>
+                    <ul>
+                        <li>{{'Connect and share it with your friends directly'|t}}</li>
+                          
+                        <li class="social-course">
+                            {{addtoanybuttons}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("closeq")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>

@@ -1,0 +1,7 @@
+theme_functions.add_story:
+    path: '/ajax/add_story'
+    defaults:
+        _controller: '\Drupal\theme_functions\Controller\AddStory::execute'
+        _title: ''
+    requirements:
+        _permission: 'access content' 

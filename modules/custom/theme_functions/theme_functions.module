@@ -1,0 +1,200 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\webform\WebformSubmissionInterface;
+use Drupal\Core\Url;
+use Drupal\Core\Link;
+
+/**
+ * Implements HOOK_preprocess();
+ */
+function theme_functions_preprocess(&$variables, $hook) {
+
+    //Footer Blocks
+    $variables['footer_menu'] = renderBlock('footer');    //Footer menu
+    $variables['useful_links'] = renderBlock('usefullinks');    //useful links menu
+    $variables['connect_us'] = renderBlock('connectwithus');    //connect with us
+    $variables['footer_text'] = renderBlock('footertext');    //footer text
+    $variables['addtoanybuttons'] = renderBlock('addtoanybuttons');    //footer text
+    $database = \Drupal::database();
+    $query = $database->query('SELECT * from node__field_story_content');
+    $variables['story_counter'] = count($query->fetchAll());
+}
+
+/**
+ * Render block
+ * @param type $blockName
+ * @return type
+ */
+function renderBlock($blockName) {
+    $block = \Drupal\block\Entity\Block::load($blockName);
+    if (!empty($block)) {
+        $render = \Drupal::entityTypeManager()
+                ->getViewBuilder('block')
+                ->view($block);
+        return $render;
+    } else {
+        return "";
+    }
+}
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function theme_functions_theme_suggestions_block_alter(&$suggestions, $variables) {
+    $content = $variables['elements']['content'];
+    if (isset($content['#block_content']) && $content['#block_content'] instanceof \Drupal\block_content\BlockContentInterface) {
+        $suggestions[] = 'block__' . $content['#block_content']->bundle();
+    }
+}
+
+/**
+ * Implements hook_webform_submission_presave().
+ */
+function theme_functions_webform_submission_presave(WebformSubmissionInterface $webform_submission) {
+
+    $evaluations = [
+        'evaluation_1',
+        'evaluation_2',
+        'evaluation_3',
+        'evaluation_4',
+        'evaluation_5',
+        'evaluation_6',
+        'evaluation_7',
+        'evaluation_8',
+        'evaluation_9',
+        'evaluation_10',
+        'evaluation_11',
+        'evaluation_12',
+        'evaluation_13',
+        'evaluation_14',
+        'evaluation_15',
+        'evaluation_16',
+        'evaluation_17',
+        'evaluation_18',
+        'evaluation_19',
+        'evaluation_20',
+        'evaluation_21',
+    ];
+    $total = 0;
+    foreach ($evaluations as $evaluation) {
+        $total += $webform_submission->getElementData($evaluation);
+    }
+    $webform_submission->setElementData('total', $total);
+}
+
+/**
+ * Implements hook_FORM-ID_alter().
+ */
+function theme_functions_form_user_register_form_alter(&$form, &$form_state, $form_id) {
+    $form['actions']['submit']['#submit'][] = 'theme_functions_user_register_submit_handler';
+}
+
+/**
+ * Redirect user after registration to course page.
+ */
+function theme_functions_user_register_submit_handler($form, &$form_state) {
+    $node = \Drupal::routeMatch()->getParameter('node');
+    if ($node instanceof \Drupal\node\NodeInterface) {
+        $nid = $node->id();
+        $form_state->setRedirect('entity.node.canonical', ['node' => $nid]);
+    }
+}
+
+/**
+ *  Implements hook_FORM-ID_alter().
+ */
+function theme_functions_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+
+    if ($form_id === 'webform_submission_course_survey_add_form') {
+        $status = \Drupal::request()->query->get('status');
+        if (isset($status) && $status == 'post') {
+            $form['actions']['submit']['#submit'][] = 'theme_functions_redirect_to_certificate';
+        }
+    }
+}
+
+function theme_functions_redirect_to_certificate($form, FormStateInterface &$form_state) {
+
+//    global $base_url; //set base path
+//    $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+//  print_r($language);die;
+    $option = [
+        'query' => ['uname' => $form_state->getValue('name')],
+    ];
+    $redirect_url = Url::fromUri('entity:node/17', $option);
+    $response = new Symfony\Component\HttpFoundation\RedirectResponse($redirect_url->toString()); //set url
+    $response->send();
+    return;
+}
+
+function theme_functions_user_login($account) {
+
+    $destination = \Drupal::request()->query->get('destination');
+    $formOpen = \Drupal::request()->query->get('openform');
+    if (!empty($destination) && !empty($formOpen)) {
+        $url = $destination . "?openform=" . $formOpen;
+        $response = new Symfony\Component\HttpFoundation\RedirectResponse($url);
+        $response->send();
+        return;
+    }
+}
+
+/**
+ * Implements hook_toolbar().
+ */
+function theme_functions_toolbar() {
+
+    // Get languages, get current route.
+    $current_language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+    $languages = \Drupal::languageManager()->getLanguages();
+    $route = \Drupal::service('path.matcher')
+                    ->isFrontPage() ? '<front>' : '<current>';
+
+    // Get links.
+    $links = [];
+    foreach ($languages as $language) {
+        $url = new Url($route, [], ['language' => $language]);
+        $links[] = [
+            '#markup' => Link::fromTextAndUrl($language->getName(), $url)
+                    ->toString(),
+        ];
+    }
+
+    // Set cache.
+    $items['admin_toolbar_langswitch'] = [
+        '#cache' => [
+            'contexts' => [
+                'languages:language_interface',
+                'url',
+            ],
+        ],
+    ];
+
+    // Build toolbar item and tray.
+    $items['admin_toolbar_langswitch'] += [
+        '#type' => 'toolbar_item',
+        '#weight' => 999,
+        'tab' => [
+            '#type' => 'html_tag',
+            '#tag' => 'div',
+            '#value' => '<span>' . t('Language') . '</span>: <span class="current-language">' . strtoupper($current_language) . '</span>',
+            '#attributes' => [
+                'class' => ['toolbar-item-admin-toolbar-langswitch'],
+                'title' => t('Admin Toolbar Langswitch'),
+            ],
+        ],
+        'tray' => [
+            '#heading' => t('Admin Toolbar Langswitch'),
+            'content' => [
+                '#theme' => 'item_list',
+                '#items' => $links,
+                '#attributes' => [
+                    'class' => ['toolbar-menu admin-lang-switcher'],
+                ],
+            ],
+        ],
+    ];
+
+    return $items;
+}

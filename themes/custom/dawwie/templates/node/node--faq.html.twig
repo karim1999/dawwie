@@ -1,0 +1,50 @@
+<!-- Page Cover -->
+<section class="page-cover darkOverlay sm-sectionPT sm-sectionPB text-center" style="background-image: url({{ file_url(node.field_top_image.entity.field_media_image.entity.fileuri) }});">
+    <div class="col-center text-center col-md-8 col-lg-7">
+        <h4 class="heading text-color-white1 mt10 mb20">{{ node.label }}</h4>
+        <ul class="breadcrumb">
+            <li class="text-color-white1"><a href="{{frontpage}}">{{'Home'|t}}</a></li>
+            <li class="active text-color-white1">{{ node.label }}</li>
+        </ul>
+    </div>
+</section>
+<section class="gymVideoSection overlaySection solidWhiteOverlay background-cover" style="background-image: url({{ base_path ~ directory }}/img/bg12.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-sm-12 col-12 HGT600 xs-HGTAuto displayTable">
+                <div class="panel-group accordion accordion-default" id="accordion1" role="tablist" aria-multiselectable="true">
+                    <section class="sectionPT">
+                        {% for key, item in node.field_questions_answers %}
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading{{key+1}}">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse{{key+1}}" aria-expanded="false" aria-controls="collapse{{key+1}}">
+                                            {{ item.entity.translation(language).field_faq_question.value }}
+                                        </a>
+                                        <span class="ti-angle-down icon dropDownIcon"></span>
+                                    </h4>
+                                </div>
+                                <div id="collapse{{key+1}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{key+1}}" data-parent="#accordion1">
+                                    <div class="panel-body">
+                                        {{ item.entity.translation(language).field_faq_answer.value }}
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </section>
+                </div>
+            </div>
+            <div class="col-lg-5 col-sm-12 col-12 HGT600 xs-HGTAuto displayTable">
+                <div class="displayTableCell verAlignMiddle xs-pb50">
+                    <div class="gym_video overlaySection gymPrimaryColorOverlay background-cover displayFlex justifyCenter alignItemsCenter" style="background-image: url({{ file_url(node.field_video_poster.entity.field_media_image.entity.fileuri) }});">
+                        <a href="{{content.field_youtube_link[0]['#url']|render}}" class="popup-youtube video" title="Image Title Come Here">
+                            <div id="play-video" class="video-play-button">
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

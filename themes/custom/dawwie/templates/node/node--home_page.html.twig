@@ -1,0 +1,206 @@
+<div class="preloader js-preloader flex-center"></div>
+
+{# Slider #}
+<div class="slider style-1">
+    <div class="owl-main owl-carousel owl-theme">
+        {{content.field_hp_slider}}
+    </div>
+</div>
+{# About Us #}
+<section class="about-us ptb-120">
+    <div class="container-fluid">
+        <div class="col-lg-12 col-md-12 col-xs-12">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div class="content-sec">
+                        <div class="heading">
+                            <h2><span></span>{{content.field_hp_s2_title.0}}</h2>
+                        </div>
+                        <p>
+                            {{content.field_hp_s2_summary.0}}
+                        </p>
+                        <div class="counter-sec">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                    <div class="counter-column">
+                                        <div class="count_icon">
+                                            <img src="{{ base_path ~ directory }}/img/safwat-3.png" />
+                                        </div>
+                                        <div class="counter_content">
+                                          <div class="counter">{{ story_counter }}</div>
+                                            <div class="title">{{'Participating stories'|t}}</div>
+                                            <span>
+                                              {{'#Your-story-complete-their-story'|t}}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                    <div class="counter-column">
+                                        <div class="count_icon">
+                                            <img src="{{ base_path ~ directory }}/img/safwat-1.png" />
+                                        </div>
+                                        <div class="counter_content">
+                                            <div class="counter">62,153</div>
+                                            <div class="title">{{'Our subscribers'|t}}</div>
+                                            <span>{{'Join Dawwie events'|t}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                    <div class="counter-column">
+                                        <div class="count_icon">
+                                            <img src="{{ base_path ~ directory }}/img/safwat-2.png" />
+                                        </div>
+                                        <div class="counter_content">
+                                            <div class="counter"><div id="facebookfeed"></div></div>
+                                            <div class="title">{{'Social Media'|t}}</div>
+                                            <span>{{'Interact with us'|t}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 animated bounceIn wow">
+                    <div class="img-sec">
+                        {{content.field_hp_s2_image.0}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# Services #}
+
+<div class="section-full bg-white content-inner-1 portfolio2">
+    <div class="container-fluid">
+        <div class="max-w600 m-auto text-center m-b30">
+            <h2 class="m-t0">{{content.field_hp_s3_title.0}}</h2>
+        </div>
+    </div>
+</div>
+<div class="section-full overlay-black-dark our-projects" style="background-image:url({{ file_url(content.field_hp_s3_background_image[0]['#media'].field_media_image.entity.uri.value) }});background-size: cover;background-repeat: no-repeat;">
+    <div class="container text-white">
+        <div class="row m-lr0 d-flex align-items-stretch">
+            {% for key, item in node.field_hp_s3_items %}
+                <div class="col-lg-4 col-md-4 p-lr0 d-flex ind-ser-info-bx">
+                    <div class="ind-service-info align-self-stretch">
+                        <span>0{{key+1}}</span>
+                        <div class="ind-service-info-in">
+                            <h2> {{ item.entity.translation(language).field_hp_services_title.value }}</h2>
+                            <p>{{ item.entity.translation(language).field_hp_services_summary.value }}</p>
+                        </div>
+                        <a href="{{ item.entity.translation(language).field_hp_services_button.0.url}}" class="site-button btn-block d-flex justify-content-between white outline outline-2">
+                            <span>{{ item.entity.translation(language).field_hp_services_button.0.title}}</span>
+                            <i class="ti-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{# Joined Members #}
+<div class="section-full bg-white content-inner-1 portfolio imgs-shuffle">
+    <div class="container-fluid imgs-shuffle-container">
+        <div class="max-w600 m-auto text-center m-b30">
+            <h2 class="m-t0">
+                {{content.field_hp_s4_title.0}}
+            </h2>
+            {{content.field_hp_s4_snippet.0}}
+        </div>
+        <div id="ri-grid" class="ri-grid ri-grid-size-2">
+            <img class="ri-loading-image" src="{{ base_path ~ directory }}/images/loading.gif"/>
+            <ul>
+                {% for item in section4_images %}
+                    <li><a href="#"><img src="{{item}}"/></a></li>
+                {%endfor%}
+                {% for item in section4_images %}
+                    <li><a href="#"><img src="{{item}}"/></a></li>
+                {%endfor%}
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+{# Testimonials #}
+<section class="testimo">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <h2>{{content.field_hp_s5_title.0}}</h2>
+
+                    <div class="carousel-inner">
+                        {%for key, items in section4_stories %}
+
+                            {% set description0 = items.0.description|render %}
+
+                            <div class="item carousel-item {{ key == 0 ? 'active' : ' ' }}">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="testimonial">
+                                            <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                            <p>{{ description0|length > 100 ? description0|slice(0, 100)|raw ~ '...' : description0|raw }}</p>
+                                            <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                         <div class="details"><a href="{{items.0.alias}}">اكمل الحكاية</a></div>
+                                        </div>
+                                        <div class="media">
+                                            <div class="media-left d-flex mr-3">
+                                                <img src="{{items.0.photo}}" alt="{{items.0.title}}"/>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>{{items.0.title}}</b></div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {%if items|length == 2%}
+
+                                        {% set description1 = items.1.description|render %}
+
+                                        <div class="col-sm-6">
+                                            <div class="testimonial">
+                                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                                <p>{{ description1|length > 100 ? description1|slice(0, 100)|raw ~ '...' : description1|raw }}</p>
+                                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                               <div class="details"><a href="{{items.1.alias}}">اكمل الحكاية</a></div>
+                                            </div>
+                                            <div class="media">
+                                                <div class="media-left d-flex mr-3">
+                                                    <img src="{{items.1.photo}}" alt="{{items.1.title}}"/>
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="overview">
+                                                        <div class="name"><b>{{items.1.title}}</b></div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {%endif%}
+                                </div>
+                            </div>
+                        {%endfor%}
+
+                    </div>
+                    <!-- Carousel controls -->
+                    <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <i class="fa fa-chevron-left"></i>
+                    </a>
+                    <a class="carousel-control left carousel-control-next" href="#myCarousel" data-slide="next">
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div class="circle strong-border"></div>-->
+</section>

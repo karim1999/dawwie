@@ -1,0 +1,999 @@
+.page-wraper{
+    direction: ltr;
+}
+.site-footer{
+    font-family: 'DroidKufi-bold','DroidKufi-regular';
+}
+.user-logged-in.toolbar-tray-open.toolbar-horizontal header
+{
+    top: 80px;
+    z-index: 15;
+}
+.user-logged-in.toolbar-tray-open.toolbar-horizontal header.sticky{
+    top: 0;
+    z-index: 999999;
+}
+.path-frontpage.user-logged-in.toolbar-tray-open.toolbar-horizontal nav.tabs{
+    margin-top: 8em;
+}
+
+/*[class*="page-node"] div#block-dawwie-page-title,*/
+[class*="path-user"] div#block-dawwie-page-title
+{
+    display: none;
+}
+.node--type-home-page .block-page-title-block{
+    display: none;
+}
+.user-logged-in.toolbar-tray-open.toolbar-horizontal[class*="page-node"] .page-wraper,
+.user-logged-in.toolbar-tray-open.toolbar-horizontal[class*="path-user"] .page-wraper
+{
+    margin-top: 85px; 
+}
+.user-logged-in.toolbar-tray-open.toolbar-horizontal[class*="page-node"] header,
+.user-logged-in.toolbar-tray-open.toolbar-horizontal[class*="path-user"] header
+{
+    background-color: #000;
+}
+.user-logged-in.toolbar-tray-open.toolbar-horizontal[class*="page-node"] nav.tabs,
+.user-logged-in.toolbar-tray-open.toolbar-horizontal[class*="path-user"] nav.tabs,
+.user-logged-in.toolbar-tray-open.toolbar-horizontal[class*="path-user"] .content
+{
+    margin-bottom: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: right;
+}
+@media (min-width: 768px){
+    .user-logged-in.toolbar-tray-open.toolbar-horizontal[class*="page-node"] nav.tabs,
+    .user-logged-in.toolbar-tray-open.toolbar-horizontal[class*="path-user"] nav.tabs,
+    .user-logged-in.toolbar-tray-open.toolbar-horizontal[class*="path-user"] .content
+    {
+        max-width: 920px;
+    }
+
+}
+@media (min-width: 992px){
+    .user-logged-in.toolbar-tray-open.toolbar-horizontal[class*="page-node"] nav.tabs,
+    .user-logged-in.toolbar-tray-open.toolbar-horizontal[class*="path-user"] nav.tabs,
+    .user-logged-in.toolbar-tray-open.toolbar-horizontal[class*="path-user"] .content
+    {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px){
+    .user-logged-in.toolbar-tray-open.toolbar-horizontal[class*="page-node"] nav.tabs,
+    .user-logged-in.toolbar-tray-open.toolbar-horizontal[class*="path-user"] nav.tabs,
+    .user-logged-in.toolbar-tray-open.toolbar-horizontal[class*="path-user"] .content
+    {
+        max-width: 1170px;
+    }
+}
+
+
+
+
+[lang="ar"] nav.tabs{
+    direction: rtl;
+}
+.alert-wrapper{
+    position: static; 
+}
+.alert-wrapper .close{
+    position: static;
+    padding: 0;
+    padding-left: 12px;
+    font-size: 20px;
+    opacity: 1;
+    font-weight: bold;
+}
+[lang="ar"] .alert-wrapper{
+    direction: rtl;
+    text-align: right;
+}
+[lang="ar"] #toolbar-administration, [lang="ar"] #toolbar-administration *{
+    text-align: right; 
+}
+.hp-slider-item-img, .hp-slider-item-img div{
+    height: 100%;
+    width: 100%;
+}
+.user-logged-in.toolbar-tray-open .about-us,
+.user-logged-in.toolbar-tray-open .portfolio,
+.user-logged-in.toolbar-tray-open .testimonials,
+.user-logged-in.toolbar-tray-open .clients,
+.user-logged-in.toolbar-tray-open .clients .container-fluid
+{
+    z-index: 10; 
+}
+/*--Login form page----*/
+.page-user-login .block-page-title-block,
+.page-user-password  .block-page-title-block
+{
+    display: none;
+}
+.page-user-login header,
+.page-user-password  header
+{
+    background-color: #000;
+}
+.page-user-login .page-wraper,
+.page-user-password  .page-wraper
+{
+    margin-top: 85px;
+    padding-top: 2em;
+}
+
+.page-user-login .user-login-form,
+.page-user-register .user-register-form,
+.front-reg-form .user-register-form,
+.page-user-password .user-pass
+{
+    direction: rtl;
+    text-align: right;
+}
+.page-user-password .user-pass p{
+    font-family: DroidKufi-Regular, sans-serif;
+    padding-right: 15px;
+    /* padding-left: 15px; */
+    font-size: 13px;
+    margin-bottom: 1em;
+}
+.page-user-login .user-login-form input,
+.page-user-register .user-register-form input,
+.front-reg-form .user-register-form input,
+.page-user-register .user-register-form select,
+.front-reg-form .user-register-form select,
+.page-user-password .user-pass input
+{
+    border-radius: 5px !important;
+    margin-bottom: 5px;
+    min-height: 50px;
+}
+.page-user-login .user-login-form input:focus,
+.page-user-register .user-register-form input:focus,
+.front-reg-form .user-register-form input:focus,
+.page-user-register .user-register-form select:focus,
+.front-reg-form .user-register-form select:focus,
+.page-user-password .user-pass input:focus
+{
+    border-color: #212121;
+    box-shadow: inset 0 1px 1px rgba(34, 34, 34, 0.25), 0 0 8px rgba(34, 34, 34, 0.25);
+}
+.page-user-login h5.heading,
+.page-user-register h5.heading,
+.front-reg-form h5.heading,
+.page-user-password h5.heading
+
+{
+    padding-top: 0;
+        margin-top: 4.5em;
+}
+.page-user-login .highlighted,
+.page-user-register .highlighted,
+.front-reg-form .highlighted,
+.page-user-password .highlighted
+{
+    padding: 0;
+}
+.page-user-login .form_area.add-mragin,
+.page-user-register .form_area.add-mragin,
+.front-reg-form .form_area.add-mragin,
+.page-user-password .form_area.add-mragin
+{
+    margin-top: 27% !important; 
+}
+.page-user-login .highlighted>aside.container.section.clearfix,
+.page-user-register .highlighted>aside.container.section.clearfix,
+.front-reg-form .highlighted>aside.container.section.clearfix,
+.page-user-password .highlighted>aside.container.section.clearfix
+{
+    position: absolute;
+    top: 90px;
+    margin-bottom: 63px;
+    z-index: 15;
+    width: 50%;
+}
+.page-user-login .user-login-form .form-actions,
+.page-user-register .user-register-form .form-actions,
+.front-reg-form .user-register-form .form-actions,
+.page-user-password .user-pass .form-actions
+{
+    text-align: center;
+}
+.page-user-login .user-login-form input,
+.page-user-register .user-register-form input,
+.page-user-register .user-register-form select,
+.front-reg-form .user-register-form input,
+.front-reg-form .user-register-form select,
+.page-user-password .user-pass input
+{
+    font-family: DroidKufi-Regular, sans-serif;
+}
+.page-user-register .user-register-form .form-item-field-user-governorate label,
+.page-user-register .user-register-form .form-item-field-user-gender label
+.front-reg-form .user-register-form .form-item-field-user-governorate label,
+.front-reg-form .user-register-form .form-item-field-user-gender label
+{
+    display: none;
+}
+.form-item-field-user-governorate label{
+    display: none;
+}
+.form-type-password-confirm{
+    padding-left: 0;
+    padding-right: 0;
+}
+.page-user-login .user-login-form .form-actions button,
+.page-user-register .user-register-form .form-actions button,
+.front-reg-form .user-register-form .form-actions button,
+.page-user-password .user-pass .form-actions button
+{
+    border-radius: 5px;
+}
+.page-user-login small.description.text-muted,
+.page-user-register small.description.text-muted,
+.front-reg-form small.description.text-muted,
+.page-user-password small.description.text-muted
+{
+    display: block;
+    clear: both;
+    font-size: 12px;
+    font-weight: lighter;
+    opacity: 0.8;
+    display: none;
+}
+.page-user-login nav.tabs,
+.page-user-register nav.tabs,
+.page-user-password nav.tabs
+{
+    display: none;
+}
+.page-user-register fieldset.form-type-password-confirm
+.front-reg-form fieldset.form-type-password-confirm
+{
+    padding-right: 0;
+    padding-left: 0;
+}
+.page-user-register .image-widget-data
+.front-reg-form .image-widget-data
+{
+    width: 100% !important;
+}
+.image-widget-data{
+    width: 100%;
+}
+.node--type-course .field--name-field-user-gender{
+    margin-bottom: 0;
+}
+.node--type-course .row.row-eq-height{
+    margin-top: 0;
+}
+.page-user-register .form-item-pass-pass2,
+.page-user-register .form-item-pass-pass2,
+.front-reg-form .form-item-pass-pass2,
+.front-reg-form .form-item-pass-pass2
+{
+    margin-bottom: 0;
+}
+.forget-pass-txt{
+    margin-top: 4em;
+}
+.forget-pass-txt a{
+    font-family: DroidKufi-Regular, sans-serif;
+    color: #333;
+}
+/*----*/
+.widget_services nav{
+    margin-top: 0 !important;
+    padding: 0 !important;
+}
+.widget_services ul.navbar-nav,
+.widget_services ul.navbar-nav li{
+    padding: 0 !important;
+}
+
+.widget_services .menu--useful-links .nav li a{
+    padding: 0 !important;
+}
+
+.widget_services ul.nav{
+    display: block;
+}
+[lang="ar"] .widget_services ul.nav{
+    text-align: right;
+    direction: rtl;
+}
+.widget_services ul.navbar-nav li a{
+    padding: 10px 0px 10px 15px;
+    color: #000!important;
+    font-size: 15px !important;
+}
+.alert{
+    font-family: 'DroidKufi-bold';
+    font-size: 14px;
+}
+div#block-connectwithus i{
+    color: #00695e;
+    font-size: 0;
+}
+div#block-connectwithus{
+    margin-top: 0;
+    padding-top: 0;
+}
+[lang="ar"] div#block-connectwithus *{
+    direction: rtl;
+}
+.slider.style-1{
+    direction: ltr;
+}
+.slider.style-1 .owl-main .caption .content p{
+    color: #fff;
+    font-size: 18px;
+    color: #fff !important;
+    margin-bottom: 40px;
+    font-family: 'DroidKufi-bold';
+    direction: rtl;
+}
+.testimo .details a {
+    color: #00695e !important;
+}
+.page-cover{
+    margin-top: 26px;
+}
+.user-logged-in.toolbar-tray-open.toolbar-horizontal .page-cover{
+    margin-top: 0;
+}
+.node--type-page .breadcrumb,
+.node--type-course .breadcrumb
+{
+    direction: ltr;
+}
+.field--name-field-blocks{
+    overflow: hidden;
+}
+.slideshow-box{
+    direction: ltr;
+}
+.accordion .panel-body{
+    direction: rtl;
+    text-align: right;
+    font-family: DroidKufi-Regular, sans-serif;
+}
+section.parallax.parallax-color-pattern.pt90.pb90{
+    background-color: rgb(0, 105, 94) !important;
+}
+.owl-carousel{
+    direction: ltr;
+}
+.sada-dawii-slider{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.page-node-13 .field--name-field-blocks .parallax>.container-fluid{
+    padding: 0;
+}
+.page-node-13 .field--name-field-blocks .parallax>.container-fluid .heading{
+    padding: 0;
+    margin: 0;
+    margin-top: 0 !important;
+}
+.dg-wrapper a.popup-youtube p{
+    color: #333;
+}
+.courses_details_sidebar{
+    margin-top: -22px;
+    position: initial;
+}
+.header-dark .navik-menu ul li.active > a{
+    color: #15a897 !important;
+}
+@media (min-width: 576px){
+    #ourPartners .modal-dialog {
+        max-width: 82%;
+        z-index: 100000;
+    }
+}
+#ourPartners .modal-content{
+
+    width: 100%;
+}
+#ourPartners .modal-header{
+    background: #fff;
+}
+#ourPartners .modal-body{
+    padding: 0;
+}
+#ourPartners .modal-header .close{
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 1;
+}
+header{
+    z-index: 1000;
+}
+a#myBtn-reg2 {
+    background: transparent;
+    border: none;
+    color: red;
+    text-align: center;
+    font-family: DroidKufi-Bold;
+}
+.front-reg-form small.description{
+    display: none;
+}
+/*.highlighted {
+    padding: 0;
+}*/
+/*.toolbar-tray-open .highlighted {
+    padding: 50px;
+}*/
+.courses_details_area .highlighted{
+    padding: 0;
+}
+input.error, select.error{
+    border-color: red;
+}
+.course-start-now{
+    font-weight: bold;
+}
+.course-start-now:hover{
+    font-weight: bold;
+    color: #fff;
+}
+div#block-dawwie-page-title, div#block-dawwie-content{
+    direction: rtl;
+    text-align: right;
+}
+.path-webform h1.title{
+    text-align: center;
+    font-size: 35px;
+}
+.webform-submission-course-survey-form{
+    max-width: 900px;
+    margin: 2em auto;
+    box-shadow: 0 0 5px rgba(0,0,0,0.6);
+}
+.webform-submission-course-survey-form input,
+.webform-submission-course-survey-form select
+{
+    border-radius: 5px !important;
+    margin-bottom: 5px;
+    min-height: 50px;
+}
+.webform-submission-course-survey-form input:focus,
+.webform-submission-course-survey-form select:focus
+{
+    border-color: #212121;
+    box-shadow: inset 0 1px 1px rgba(34, 34, 34, 0.25), 0 0 8px rgba(34, 34, 34, 0.25);
+}
+.webform-submission-course-survey-form fieldset .form-item-status{
+    display: none;
+}
+.webform-submission-course-survey-form fieldset .form-item-total{
+    display: none;
+}
+fieldset#edit-alm-lwmat-alshkhsyt{
+    background-color: #dddddd4a;
+    text-align: center;
+    padding: 25px;
+}
+fieldset#edit-alm-lwmat-alshkhsyt legend{
+    display: none;
+}
+fieldset#edit-alm-lwmat-alshkhsyt fieldset{
+    float: right;
+}
+.webform-submission-course-survey-form .form-item-city{
+    float: left !important;
+}
+.webform-submission-course-survey-form .form-item-education-select{
+    padding: 0;
+    margin-top: -15px;
+}
+.webform-submission-course-survey-form  .radios--wrapper legend{
+    font-size: 18px;
+}
+.webform-submission-course-survey-form  .radios--wrapper{
+    border-bottom: 1px solid #ddd;
+}
+.webform-submission-course-survey-form  .radios--wrapper label{
+    margin-right: 25px;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.webform-submission-course-survey-form  .radios--wrapper input:focus, 
+.webform-submission-course-survey-form  .radios--wrapper select:focus{
+    box-shadow: none;
+    outline: 0;
+}
+.webform-submission-course-survey-form  .radios--wrapper input{
+    position: static;
+    width: 25px;
+    float: right;
+}
+.js-webform-radios .js-form-item{
+    width: 50%;
+    float: right;
+    cursor: pointer;
+}
+button#edit-submit{
+    min-width: 150px;
+    min-height: 42px;
+    font-size: 20px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.node--type-page .highlighted{
+    padding: 0;
+}
+
+.toolbar-tray-open.node--type-course div#block-dawwie-page-title,
+.toolbar-tray-open.node--type-page div#block-dawwie-page-title,
+.toolbar-tray-open.node--type-faq div#block-dawwie-page-title
+{
+    display: none;
+}
+.node--type-course nav.tabs,
+.node--type-page nav.tabs
+{
+    margin-top: 7em;
+}
+/*.page-node-13 div#block-dawwie-page-title{
+    height: 0;
+}*/
+.node--type-story div#block-dawwie-page-title,
+.page-node-16 div#block-dawwie-page-title
+{
+    display: none;
+}
+.node--type-story blockquote{
+    font-family: DroidKufi-Regular, sans-serif;
+}
+.error-section .content_area{
+    background-color: transparent;
+}
+.breadcrumb{
+    direction: ltr;
+}
+.node--type-faq div#block-dawwie-page-title{
+    display: none;
+}
+.node--type-faq  .highlighted{
+    padding-top: 0;
+}
+
+/*===============================*/
+
+.ri-grid{
+    width: 600px;
+}
+
+.ri-grid ul li,
+.ri-grid ul li a{
+    width: 100px;
+    height: 100px;
+}
+.ri-grid ul li a img{
+    width: 100%;
+}
+.ri-grid{
+    margin: 30px auto 30px;
+    position: relative;
+    height: auto;
+}
+
+.ri-grid ul {
+    list-style: none;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Clear floats by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.ri-grid ul:before,
+.ri-grid ul:after{
+    content: '';
+    display: table;
+}
+
+.ri-grid ul:after {
+    clear: both;
+}
+
+.ri-grid ul {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+} 
+
+.ri-grid ul li {
+    -webkit-perspective: 400px;
+    -moz-perspective: 400px;
+    -o-perspective: 400px;
+    -ms-perspective: 400px;
+    perspective: 400px;	
+    margin: 0;
+    padding: 0;
+    float: left;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background: #000;
+}
+
+.ri-grid ul li a{
+    display: block;
+    outline: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #333;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+/* Grid wrapper sizes */
+.ri-grid-size-1{
+    width: 55%;
+
+}
+.full-100-widht{
+    width: 100%;
+}
+.ri-grid-size-2{
+    width: 100%;
+}
+.ri-grid-size-3{
+    width: 100%;
+    margin-top: 0px;
+}
+
+/* Shadow style */
+/*.ri-shadow:after,
+.ri-shadow:before{
+        content: "";
+        position: absolute;
+        z-index: -2;
+        bottom: 15px;
+        left: 10px;
+        width: 50%;
+        height: 20%;
+        max-width: 300px;
+        max-height: 100px;
+        box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+        -webkit-transform: rotate(-3deg);
+        -moz-transform: rotate(-3deg);
+        -ms-transform: rotate(-3deg);
+        -o-transform: rotate(-3deg);
+        transform: rotate(-3deg);
+}
+.ri-shadow:after{
+        right: 10px;
+        left: auto;
+        -webkit-transform: rotate(3deg);
+        -moz-transform: rotate(3deg);
+        -ms-transform: rotate(3deg);
+        -o-transform: rotate(3deg);
+        transform: rotate(3deg);
+}*/
+
+.ri-grid-loading:after,
+.ri-grid-loading:before{
+    display: none;
+}
+
+.ri-loading-image{
+    display: none;
+}
+
+.ri-grid-loading .ri-loading-image{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    margin: 100px 0 0 -15px;
+    display: block;
+}
+section#dawwie-certificate{
+    padding-bottom: 20px;
+}
+a.print-certificate{
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+@media print {
+    a.print-certificate, header, footer{
+        display: none;
+    }
+    h2.cert-p{
+        padding-top: 18%;
+        right: 30%;
+    }
+}
+.acc-deny-section{
+    background-size: cover;
+    padding-bottom: 10px;
+}
+.acc-deny-section .content_area .heading{
+    font-size: 60px;
+    margin-bottom: 30px;
+    padding-top: 25px;
+    font-family: 'DroidKufi-Bold', sans-serif;
+}
+.acc-deny-section .content_area .cover-sub-heading{
+    color: #777 !important;
+    font-size: 30px;
+}
+.error-section{
+    padding-top: 0;
+}
+.c-user-info{
+    display:none;
+}
+
+.course-form-pre input#edit-name,
+.course-form-pre select#edit-gender,
+.course-form-pre select#edit-govern,
+.course-form-pre  span.select2-selection.select2-selection--single
+{
+    pointer-events: none;
+    background-color: #607d8b26;
+}
+
+.course-form-post input#edit-name,
+.course-form-post select#edit-gender,
+.course-form-post select#edit-govern,
+.course-form-post input#edit-city,
+.course-form-post select#edit-education-select,
+.course-form-post span.select2-selection.select2-selection--single,
+.course-form-post select#edit-how-you-know-course-select,
+.course-form-post input#edit-how-you-know-course-other
+{
+    pointer-events: none;
+    background-color: #607d8b26;
+}
+
+.user-register-form  input#edit-field-user-birth-date-0-value-date{
+    width: 100%;
+}
+.user-register-form  .field--widget-datetime-default{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.user-register-form  .field--widget-datetime-default label{
+    padding-right: 15px;
+}
+
+.textCenter.mb20.avatar img{
+    width: 90px!important;
+    height: 90px !important;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15)!important;
+    border-radius: 50%!important;
+    object-fit: cover;
+}
+.corona{
+
+    padding: 0px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999999;
+    background-color: #31695e;
+}
+.corona a.covid-19 {
+    color: #31695e;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 30px 5px 31px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 8px 0 rgba(255, 255, 255, 0.17);
+}
+/*
+.corona a.covid-19{
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 30px 5px 31px;
+}*/
+.corona a.covid-19:hover{
+    border-color: #fbecbd;
+}
+.corona p{
+    display: inline;
+    color: #fff;
+    margin-left: 20px;
+    font-weight: bold;
+    font-family: 'DroidKufi-Bold', sans-serif;
+}
+.corona span.close{
+    float: left;
+    padding-top: 7px;
+    padding-left: 19px;
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.9;
+    font-weight: lighter;
+    font-family: sans-serif;
+}
+.path-frontpage .corona{
+    padding: 13px 0;
+}
+
+.path-frontpage .corona a.covid-19 {
+
+    padding: 2px 30px 2px 30px;
+
+}
+
+.path-frontpage .corona span.close{
+    padding-top: 0;
+}
+header.top-50{
+    top: 35px !important;
+}
+@media screen and (max-device-width: 780px) and (min-device-width: 320px){
+
+
+    .corona a.covid-19 {
+
+        font-size: 9px !important;
+
+    }
+    .corona p {
+
+        font-size: 9px !important;
+    }
+    .path-frontpage .corona {
+        padding: 11px 0 !important;
+    }
+    .corona span.close {
+
+        font-size: 19px !important;
+
+    }
+    .corona {
+        padding: 2px 0 ;
+
+    }
+    .page-cover {
+        margin-top: 0px !important;
+    }
+}
+
+div#block-addtoanybuttons{
+    direction: ltr;
+}
+.toolbar-tray-open .corona{
+    display: none  !important;
+}
+.toolbar-tray-open header.top-50{
+    top: 80px !important;
+}
+.user-register-form div#edit-field-user-avatar img{
+    width: 70px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+}
+.user-register-form div#edit-field-user-avatar .js-form-item{
+    float: right;
+    padding: 0;
+    margin-left: 5px;
+}
+fieldset#edit-field-user-avatar--wrapper legend{
+    display: none;
+}
+.user-register-form div#edit-field-user-avatar label{
+    cursor: pointer;
+}
+.user-register-form div#edit-field-user-avatar input{
+    opacity: 0;
+}
+.user-avatar-checked img{
+    border: 2px solid #31695e !important;
+}
+.add-story-not-logged{
+    position: absolute;
+    top: 31%;
+    left: 12%;
+    z-index: 15;
+}
+.add-story-not-logged p{
+    font-size: 18px;
+    color: #850909;
+}
+.add-story-form-not-logged{
+    opacity: 0.2;
+    pointer-events: none;
+}
+@media screen and (max-device-width: 767px){
+
+    .add-story-not-logged p {
+        font-size: 13px !important;
+        color: #850909;
+        ;
+    }
+    .add-story-not-logged {
+        position: absolute;
+        top: 31%;
+        left: 12%  !important;
+        z-index: 15;
+    }
+
+}
+
+.add-story-thanks{
+    font-size: 23px;
+    margin-top: 6em;
+    padding-right: 18px;
+    text-align: center;
+}
+fieldset#edit-how-you-know-course{
+    padding-left: 0;
+    padding-right: 0;
+}
+.form-item-govern span.selection{
+    width: 100%;
+}
+.form-item-govern span.select2-selection.select2-selection--single{
+    min-height: 50px;
+    padding-top: 10px;
+    border-color: #ced4da;
+}
+.form-item-govern *{
+    text-align: right;
+    direction: rtl;
+}
+
+.path-webform .alert-wrapper{
+    display: none;
+}
+.path-webform form .alert-wrapper{
+    display: block;
+}
+label.error{
+        color: #dc3545;
+    font-size: 14px;
+    font-family: DroidKufi-Regular, sans-serif;
+}
+input.error, select.error{
+    border-color: #dc3545 !important;
+}
+small#edit-mail--description{
+        display: block !important;
+            display: block !important;
+    font-family: DroidKufi-Regular, sans-serif;
+    font-weight: bold;
+}
+.admin-lang-switcher{
+        display: table;
+}
+.page-user-reset .content{
+    max-width: 1170px;
+    margin: auto;
+}

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+body{
+    direction: ltr;
+    font-family: 'HelveticaLTStd-Roman' ;
+}
+body *{
+    font-family: 'HelveticaLTStd-Roman' ;
+}
+@font-face {
+    font-family: 'HelveticaLTStd-Roman';
+    src: url('../../fonts/HelveticaLTStd-Roman.otf') format('truetype'), url('../../fonts/HelveticaNeueLTStd-Bd.otf') format('truetype');
+}
+
+div#block-dawwie-content{
+    direction: ltr; 
+margin-top: 1%;
+}
+.slider.style-1 .owl-main .caption .display, a.btn.on-dark.btn-primary{
+    font-family: 'HelveticaLTStd-Roman' ;
+    font-weight: 700;
+}
+section.about-us.ptb-120{
+    direction: rtl
+}
+ul.nav.navbar-nav { 
+direction: ltr;
+text-align: left;
+}
+.accordion .panel-body {
+    direction: rtl;
+    text-align: left;
+    font-family: DroidKufi-Regular ;
+}
+.add-story-not-logged {
+    position: absolute;
+    top: 36%;
+    right: 17%;
+    z-index: 15;
+    left: unset !important;
+}
+.slider.style-1 .owl-main .caption .content p {
+    margin-bottom: 0px !important;
+    font-family: 'HelveticaLTStd-Roman' !important;
+    font-weight: 600;
+}
+.testimo .details a {
+    color: #00695e !important;
+    font-size: 15px;
+}
+
+
+.page-user-login .user-login-form input, .page-user-register .user-register-form input, .page-user-register .user-register-form select, .front-reg-form .user-register-form input, .front-reg-form .user-register-form select, .page-user-password .user-pass input {
+    font-family: HelveticaLTStd-Roman;
+    direction: ltr;
+}
+.user-register-form .field--widget-datetime-default label {
+    padding-left: 15px;
+    direction: ltr;
+    text-align: left;
+    left: 0 !important;
+}
+.user-register-form .field--widget-datetime-default {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+input#edit-field-user-birth-date-0-value-date {
+    text-align: left;
+}
+.user-register-form div#edit-field-user-avatar .js-form-item {
+    float: left;
+    padding: 0;
+    margin-right: 5px;
+}
+fieldset.js-form-item.js-form-type-managed-file.form-type-managed-file.js-form-item-user-picture-0.form-item-user-picture-0.form-group.col-auto {
+    text-align: left;
+}
+fieldset#edit-pass {
+    padding-left: 0;
+}
+.js-webform-radios .js-form-item {
+    width: 50%;
+    float: left;
+    cursor: pointer;
+    text-align: left;
+}
+.webform-submission-course-survey-form .radios--wrapper input {
+    position: static;
+    width: 25px;
+    float: left;
+}
+
+span.fieldset-legend.js-form-required.form-required {
+    text-align: left;
+    float: left;
+}
+.form-item-govern * {
+    text-align: left;
+    direction: ltr;
+}
+.corona span.close {
+    float: right;
+    padding-top: 7px;
+    padding-right: 19px;
+    
+    padding-left: 0;
+}
+label.error {
+    color: #dc3545;
+    font-size: 14px;
+     font-family: 'HelveticaLTStd-Roman' !important;
+    float: left !important;
+}
+small#edit-mail--description {
+    text-align: left;
+}
+div#block-addtoanybuttons {
+    direction: rtl !important;
+}
+.owl-theme .owl-nav.disabled + .owl-dots {
+ 
+    display: flex;
+}
